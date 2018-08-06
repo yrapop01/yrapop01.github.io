@@ -6,7 +6,7 @@ title: Introduction to Python
 
 - [Topics](#course-topics)
 - [Notebooks](#notebooks)
-- [Exersizes](#exersizes)
+- [Exercises](#exercises)
 
 ## Course Topics ##
 
@@ -81,6 +81,6 @@ title: Introduction to Python
 
 - ...to be published
 
-## Exersizes
+## Exercises
 
 - ...to be published
