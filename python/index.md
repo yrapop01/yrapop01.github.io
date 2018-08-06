@@ -1,4 +1,4 @@
-% Introduction to Python
+<title>This is a title for the web-page</title>
 
 ### Contents
 
