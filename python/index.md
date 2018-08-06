@@ -1,5 +1,6 @@
 ---
-layout: no-title-post
+layout: post
+title: t
 ---
 
 ### Contents
