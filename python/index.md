@@ -1,7 +1,6 @@
 ---
-title: My page
-page.title: My page
-page.author: Yuri Rapoport
+site.title: Introduction to Python
+title: Introduction to Python
 ---
 
 ### Contents
