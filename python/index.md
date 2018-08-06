@@ -1,5 +1,5 @@
 ---
-title: Blogging Like a Hacker
+site.title: Blogging Like a Hacker
 ---
 
 ### Contents
