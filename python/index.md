@@ -3,13 +3,13 @@ title: Introduction to Python
 site.github.repository_name: Yu
 ---
 
-### Contents
+# Contents
 
 - [Topics](#course-topics)
 - [Notebooks](#notebooks)
 - [Exercises](#exercises)
 
-## Course Topics ##
+# Course Topics
 
 ### Basics (half day)
 
@@ -78,10 +78,10 @@ site.github.repository_name: Yu
 - Built-in classes
 - Typing
 
-## Notebooks
+# Notebooks
 
 - ...to be published
 
-## Exercises
+# Exercises
 
 - ...to be published
