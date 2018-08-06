@@ -1,5 +1,7 @@
 ---
 title: My page
+page.title: My page
+page.author: Yuri Rapoport
 ---
 
 ### Contents
