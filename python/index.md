@@ -1,5 +1,6 @@
 ---
 title: Introduction to Python
+yuri.title: Introduction to Python
 ---
 
 ### Contents
