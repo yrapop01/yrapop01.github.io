@@ -2,7 +2,7 @@
 title: Introduction to Python
 ---
 
-### Contents A
+### Contents
 
 - [Topics](#course-topics)
 - [Notebooks](#notebooks)
