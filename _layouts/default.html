@@ -14,8 +14,9 @@
     <header>
       <div class="container">
         <h1>Introduction to Python</h1>
-        {{ site.github.repository_name }}
-        <!--h2>{{ site.description | default: site.github.project_tagline }}</h2-->
+        {{ title }}
+        {{ page.title }}
+        <!--h2>Here{{ site.description | default: site.github.project_tagline }}</h2-->
 
         <section id="downloads">
           {% if site.show_downloads %}
