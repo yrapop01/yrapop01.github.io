@@ -1,5 +1,6 @@
 ---
 site.title: Introduction to Python
+site.description: Introduction to Python
 title: Introduction to Python
 ---
 
