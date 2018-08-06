@@ -1,4 +1,4 @@
-<title>This is a title for the web-page</title>
+title: This is a title for the web-page
 
 ### Contents
 
