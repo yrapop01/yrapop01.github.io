@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8">
 
-    <title>{{ page.title }}</title>
-{% seo %}
-    <title>{{ page.title }}</title>
+
+<title>{{ page.title }}</title>
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://www.yurirapoport.com/python/" />
+<meta property="og:url" content="http://www.yurirapoport.com/python/" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://www.yurirapoport.com/python/","headline":"Introduction to Python","@context":"http://schema.org"}</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
