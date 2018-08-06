@@ -1,5 +1,6 @@
 ---
 title: Introduction to Python
+site.github.repository_name: Yu
 ---
 
 ### Contents
