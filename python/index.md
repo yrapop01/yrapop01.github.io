@@ -1,6 +1,5 @@
 ---
-title: Blogging Like a Hacker
-layout: post
+layout: no-title-post
 ---
 
 ### Contents
