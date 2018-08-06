@@ -1,6 +1,6 @@
-<head>
-    <title>Introduction to Python</title>
-</head>
+---
+title: Blogging Like a Hacker
+---
 
 ### Contents
 
