@@ -1,4 +1,6 @@
-title: This is a title for the web-page
+<head>
+    <title>Introduction to Python</title>
+</head>
 
 ### Contents
 
