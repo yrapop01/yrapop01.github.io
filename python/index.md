@@ -3,7 +3,7 @@ title: Introduction to Python
 layout: custom
 ---
 
-### Contents A
+### Contents
 
 - [Topics](#course-topics)
 - [Notebooks](#notebooks)
