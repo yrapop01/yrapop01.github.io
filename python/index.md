@@ -1,9 +1,8 @@
 ---
 title: Introduction to Python
-layout: custom
 ---
 
-### Contents
+### Contents A
 
 - [Topics](#course-topics)
 - [Notebooks](#notebooks)
