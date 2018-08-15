@@ -15,6 +15,7 @@ site.github.repository_name: Yu
 - Software requirements: Python 3.6+ with numpy, jupyter, pyplot, pandas and scikit-learn installed
 - Preferred hours: 10:00-18:00
 - Preferred number of students: between 15 and 25
+- Advisor: Yuri Rapoport
 
 # Course Topics
 
