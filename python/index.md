@@ -1,6 +1,6 @@
 ---
-title: Introduction to Python<br>with Focus on Data Science
-site.github.repository_name: Yu
+header: Introduction to Python<br>with a Focus on Data Science
+title: Introduction to Python with a Focus on Data Science
 ---
 
 # Contents
