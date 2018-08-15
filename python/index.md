@@ -7,10 +7,6 @@ title: Introduction to Python with a Focus on Data Science
 
 - [Info](#course-info)
 - [Topics](#course-topics)
-<!--
-- [Notebooks](#notebooks)
-- [Exercises](#exercises)
--->
 
 # Course Info
 
@@ -177,13 +173,3 @@ The topics could be changed or corrected according to students' interests, level
 - Clustering
 - Dimensionality reduction
 - K-Means
-
-<!--
-# Notebooks
-
-- ...to be published
-
-# Exercises
-
-- ...to be published
--->
