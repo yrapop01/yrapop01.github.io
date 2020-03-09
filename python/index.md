@@ -11,7 +11,7 @@ title: Introduction to Python
 
 # Basics
 
-### Comments
+## Comments
 
 ```python
 # This is line comment
@@ -25,7 +25,7 @@ which can be used as comment
 """
 ```
 
-### Dynamic Typing
+## Dynamic Typing
 
 Python is a *dynamically typed* programming language. Types are decided at runtime. A special built-in function *type* returns the type of an object.
 
@@ -46,7 +46,7 @@ print(type(b))
 print(type(null))
 ```
 
-### Unary and Binary Operations
+## Unary and Binary Operations
 
 Run the code below in an interpreter and answer the questions below:
 
@@ -60,6 +60,22 @@ print(name + ", very nice to meet you" + ('!' * 10))
 
 <span style="color:red">What happens when two strings are added?</span>
 <span style="color:red">What happens when string is multiplied by an integer?</span>
+
+### Arithmetic & Binary Operation
+
+Checking whether $322.0625 -\frac{(n^3 + 1456)} > m$ for $n=12$ and $m = 150$:
+
+```python
+n = 12
+m = 150
+322.0625 - (n ** 3) / 16 > 150
+```
+
+Verifying that $5 < 6 < 8$ and that $-1 < 0$:
+
+```python
+(5 < 6 < 8) and (-1 < 0)
+```
 
 # Course Topics
 
