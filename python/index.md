@@ -1,6 +1,6 @@
 ---
-header: How To Sneak Like Python
-title: How To Sneak Like Python
+header: How To Sneak Like a Python
+title: How To Sneak Like a Python
 ---
 
 # Contents
@@ -63,7 +63,34 @@ print(name + ", very nice to meet you" + ('!' * 10))
 
 ### Arithmetic & Binary Operation
 
-Checking whether $322.0625 -\frac{(n^3 + 1456)} > m$ for $n=12$ and $m = 150$:
+Checking whether $322.0625 -\frac{(n^3 + 1456)} > m$ for n=12 and m=150:
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mn>322</mn>
+    <mi>.</mi>
+    <mn>0625</mn>
+    <mo>-</mo>
+    <mfrac>
+      <mrow>
+        <mo maxsize="1">(</mo>
+        <msup>
+          <mrow>
+            <mi>n</mi>
+          </mrow>
+          <mrow>
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>1456</mn>
+        <mo maxsize="1">)</mo>
+      </mrow>
+    </mfrac>
+    <mi>&gt;</mi>
+    <mi>m</mi>
+  </mrow>
+</math>
 
 ```python
 n = 12
@@ -97,6 +124,53 @@ binary = format(n, 'b')
 
 print('binary:', binary)
 ```
+
+## Lists and Tuples
+
+List is an array in python. Tuple is a list that cannot be changed.
+
+```python
+# Declare a list:
+lst = [1, 2, 3, 4, 5]
+
+# Change the values of the list:
+lst[0] = 'Hello'
+lst[-1] = 20
+print(lst)
+```
+
+<span style="color:red">Why do you see an error when you try to run the code below?</span>
+
+```python
+# Declare the following tuple (tuple is a list that cannot be changed)
+tpl = (1, 2, 3, 4, 5)
+
+# Set the value of tpl[0] to 0.
+tpl[0] = 0
+```
+
+What is the complexity of the following operation (assuming the length of lst lst is n):
+
+```python
+# in operator checks whether an element is contained in a container:
+
+5 in lst # => True
+```
+
+## Indexing
+
+Strings, lists and tuples can all be indexed and iterated. Indexing a container returns new container
+of the same type containing elements from the original one. The syntax of indexing a container x is
+
+```python
+x[i:j:k]
+```
+
+where i, j, k specify the elements to be put in the output container: i is the first element,
+k is the distance between two subsequent elements, and j is the first index in the sequence $i, i+k, i+2*k, ...$ not be put in the output.
+When i and j are negative the length of the container is added to them.  All three indexes can be ommited: 
+default value for i is 0, default value for j is the length of the container and default value of k is 1.
+
 
 # Course Topics
 
