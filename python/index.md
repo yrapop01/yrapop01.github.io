@@ -65,32 +65,7 @@ print(name + ", very nice to meet you" + ('!' * 10))
 
 Checking whether $322.0625 -\frac{(n^3 + 1456)} > m$ for n=12 and m=150:
 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow>
-    <mn>322</mn>
-    <mi>.</mi>
-    <mn>0625</mn>
-    <mo>-</mo>
-    <mfrac>
-      <mrow>
-        <mo maxsize="1">(</mo>
-        <msup>
-          <mrow>
-            <mi>n</mi>
-          </mrow>
-          <mrow>
-            <mn>3</mn>
-          </mrow>
-        </msup>
-        <mo>+</mo>
-        <mn>1456</mn>
-        <mo maxsize="1">)</mo>
-      </mrow>
-    </mfrac>
-    <mi>&gt;</mi>
-    <mi>m</mi>
-  </mrow>
-</math>
+<math><mrow><mn>322</mn><mi>.</mi><mn>0625</mn><mo>-</mo><mfrac linethickness="1"><mrow><mrow><mo>(</mo><msup><mrow><mi>n</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>+</mo><mn>1456</mn><mo>)</mo></mrow></mrow><mrow><mi>></mi></mrow></mfrac><mi>m</mi></mrow></math>
 
 ```python
 n = 12
