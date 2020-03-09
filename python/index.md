@@ -77,6 +77,27 @@ Verifying that $5 < 6 < 8$ and that $-1 < 0$:
 (5 < 6 < 8) and (-1 < 0)
 ```
 
+Verifying that binary number 101 (5) xored with 111 (7) equals 010 (4):
+
+```python
+5 ^ 7 == 4
+```
+
+Doing the same by manually converting binary strings to integers:
+
+```python
+five = int('101', base=2)
+seven = int('111', base=2)
+
+n = five ^ seven
+
+print('decimal:', n)
+
+binary = format(n, 'b')
+
+print('binary:', binary)
+```
+
 # Course Topics
 
 The topics could be changed or corrected according to students' interests, level and progress.
