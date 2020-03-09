@@ -11,6 +11,24 @@ title: Introduction to Python
 
 # Basics
 
+```python
+
+# This is line comment
+
+"""This 
+
+is
+
+multi
+
+line
+
+string, 
+
+which can be used as comment
+"""
+```
+
 - Software requirements: Python 3.6+ with numpy, jupyter, pyplot, pandas and scikit-learn installed
 - Preferred hours: 10:00-18:00
 - Preferred number of students: 15-25
