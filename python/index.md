@@ -58,7 +58,7 @@ name = input('Your name is ')
 print(name + ", very nice to meet you" + ('!' * 10))
 ```
 
-<span style="color:red">What happens when two strings are added?</span>
+<span style="color:red">What happens when two strings are added?</span><br/>
 <span style="color:red">What happens when string is multiplied by an integer?</span>
 
 ### Arithmetic & Binary Operation
@@ -68,7 +68,7 @@ Checking whether $322.0625 -\frac{(n^3 + 1456)} > m$ for $n=12$ and $m = 150$:
 ```python
 n = 12
 m = 150
-322.0625 - (n ** 3) / 16 > 150
+322.0625 - (n ** 3) / 16 > m
 ```
 
 Verifying that $5 < 6 < 8$ and that $-1 < 0$:
