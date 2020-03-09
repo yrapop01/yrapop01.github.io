@@ -7,6 +7,13 @@ title: Introduction to Python
 
 - [Basics](#basics)
 - [Topics](#topics)
+- [Thanks](#thanks)
+
+# Thanks 
+
+If you like the course feel free to donate to its author:
+
+<a href="https://liberapay.com/yrapop/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 # Basics
 
