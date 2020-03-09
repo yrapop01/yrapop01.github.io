@@ -63,9 +63,7 @@ print(name + ", very nice to meet you" + ('!' * 10))
 
 ### Arithmetic & Binary Operation
 
-Checking whether $322.0625 -\frac{(n^3 + 1456)} > m$ for n=12 and m=150:
-
-<math><mrow><mn>322</mn><mi>.</mi><mn>0625</mn><mo>-</mo><mfrac linethickness="1"><mrow><mrow><mo>(</mo><msup><mrow><mi>n</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>+</mo><mn>1456</mn><mo>)</mo></mrow></mrow><mrow><mi>></mi></mrow></mfrac><mi>m</mi></mrow></math>
+Checking whether <!-- 322.0625 -\frac{(n^3 + 1456)}{16} > m --><math><mrow><mn>322</mn><mi>.</mi><mn>0625</mn><mo>-</mo><mfrac linethickness="1"><mrow><mrow><mo>(</mo><msup><mrow><mi>n</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>+</mo><mn>1456</mn><mo>)</mo></mrow></mrow><mrow><mrow><mn>16</mn></mrow></mrow></mfrac><mi>></mi><mi>m</mi></mrow></math> for n=12 and m=150:
 
 ```python
 n = 12
@@ -142,7 +140,7 @@ x[i:j:k]
 ```
 
 where i, j, k specify the elements to be put in the output container: i is the first element,
-k is the distance between two subsequent elements, and j is the first index in the sequence $i, i+k, i+2*k, ...$ not be put in the output.
+k is the distance between two subsequent elements, and j is the first index in the sequence i, i+k, i+2*k, ... not be put in the output.
 When i and j are negative the length of the container is added to them.  All three indexes can be ommited: 
 default value for i is 0, default value for j is the length of the container and default value of k is 1.
 
