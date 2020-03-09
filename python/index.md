@@ -11,28 +11,56 @@ title: Introduction to Python
 
 # Basics
 
-```python
+### Comments
 
+```python
 # This is line comment
 
 """This 
-
 is
-
 multi
-
 line
-
 string, 
-
 which can be used as comment
 """
 ```
 
-- Software requirements: Python 3.6+ with numpy, jupyter, pyplot, pandas and scikit-learn installed
-- Preferred hours: 10:00-18:00
-- Preferred number of students: 15-25
-- Advisor: Yuri Rapoport
+### Dynamic Typing
+
+Python is a *dynamically typed* programming language. Types are decided at runtime. A special built-in function *type* returns the type of an object.
+
+```python
+# Run the code below in an interpreter:
+
+s = "Hello, World! שלום"
+bt = b'Hello'
+n = 55
+f = 5.5
+b = True
+null = None
+
+print(type("Hello"))
+print(type(n))
+print(type(f))
+print(type(b))
+print(type(null))
+```
+
+### Unary and Binary Operations
+
+Run the code below in an interpreter and answer the questions below:
+
+```python
+# Getting input string from the user
+name = input('Your name is ')
+
+# Strings can be added and multiplied
+print(name + ", very nice to meet you" + ('!' * 10))
+```
+
+<span style="color:red">What happens when two strings are added?</span>
+
+<span style="color:red">What happens when string is multiplied by an integer?</span>
 
 # Course Topics
 
