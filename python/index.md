@@ -140,7 +140,7 @@ x[i:j:k]
 ```
 
 where i, j, k specify the elements to be put in the output container: i is the first element,
-k is the distance between two subsequent elements, and j is the first index in the sequence i, i+k, i+2*k, ... not be put in the output.
+k is the distance between two subsequent elements, and j is the first index in the sequence "i, i+k, i+2*k, ..." not be put in the output.
 When i and j are negative the length of the container is added to them.  All three indexes can be ommited: 
 default value for i is 0, default value for j is the length of the container and default value of k is 1.
 
