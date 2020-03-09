@@ -71,7 +71,7 @@ m = 150
 322.0625 - (n ** 3) / 16 > m
 ```
 
-Verifying that $5 < 6 < 8$ and that $-1 < 0$:
+Verifying that 5 < 6 < 8 and that -1 < 0:
 
 ```python
 (5 < 6 < 8) and (-1 < 0)
