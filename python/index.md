@@ -1,6 +1,6 @@
 ---
-header: Introduction to Python
-title: Introduction to Python
+header: How To Sneak Like Python
+title: How To Sneak Like Python
 ---
 
 # Contents
