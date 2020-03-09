@@ -1,14 +1,14 @@
 ---
-header: Introduction to Python<br>with a Focus on Data Science
-title: Introduction to Python with a Focus on Data Science
+header: Introduction to Python
+title: Introduction to Python
 ---
 
 # Contents
 
-- [Info](#course-info)
-- [Topics](#course-topics)
+- [Basics](#basics)
+- [Topics](#topics)
 
-# Course Info
+# Basics
 
 - Software requirements: Python 3.6+ with numpy, jupyter, pyplot, pandas and scikit-learn installed
 - Preferred hours: 10:00-18:00
