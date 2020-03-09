@@ -9,12 +9,6 @@ title: Introduction to Python
 - [Topics](#topics)
 - [Thanks](#thanks)
 
-# Thanks 
-
-If you like the course feel free to donate to its author:
-
-<a href="https://liberapay.com/yrapop/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
-
 # Basics
 
 - Software requirements: Python 3.6+ with numpy, jupyter, pyplot, pandas and scikit-learn installed
@@ -180,3 +174,7 @@ The topics could be changed or corrected according to students' interests, level
 - Clustering
 - Dimensionality reduction
 - K-Means
+
+# Thanks 
+
+If you like the course feel free to send gratidute to its author: https://paypal.me/yrppt
