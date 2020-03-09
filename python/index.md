@@ -59,7 +59,6 @@ print(name + ", very nice to meet you" + ('!' * 10))
 ```
 
 <span style="color:red">What happens when two strings are added?</span>
-
 <span style="color:red">What happens when string is multiplied by an integer?</span>
 
 # Course Topics
