@@ -177,4 +177,4 @@ The topics could be changed or corrected according to students' interests, level
 
 # Thanks 
 
-If you like the course feel free to send gratidute to its author: [https://paypal.me/yrppt]
+If you enjoyed the course feel free to send gratidute to its author: [https://paypal.me/yrppt]
