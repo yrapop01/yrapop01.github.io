@@ -266,7 +266,7 @@ print(towers['Tel Aviv'])
 
 <span style="color:red">What is the type of towers["Ramat Gan"]? How do you check it in python?</span>
 
-Alternative way of creating a dictionary:
+Alternative to create a dictionary:
 
 ```python
 x = dict(one=1, two=2, three=3)
