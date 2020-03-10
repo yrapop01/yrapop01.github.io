@@ -1,5 +1,5 @@
-header: How To Sneak Like a Python
-title: How To Sneak Like a Python
+header: Sneaking Like a Python
+title: Sneaking Like a Python
 ---
 
 # Contents
