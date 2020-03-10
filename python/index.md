@@ -224,6 +224,8 @@ while i < 10:
 print(lst)
 ```
 
+<span style="color:red">What would be the output of the code above (run it in the interpreter to verify your answer)?</span>
+
 ## Casting
 
 Cast from one type to another can be done using built-in functions int, float, list, tuple, bool, etc.
@@ -236,7 +238,21 @@ Print in the interpreter the types and the values of:
 - bool([0])
 </span>
 
-<span style="color:red">What would be the output of the code above (run it in the interpreter to verify your answer)?</span>
+## Sets and Dictionaries
+
+Sets and dictionaries are implemented in python with hashtables.
+
+```python
+# Define a set of strings:
+towers = {'Azrieli', 'Electra', 'Time', 'Atrium', 'Sail'}
+print(towers)
+```
+
+<span style="color:red">What was the complexity of the following expression assuming the set towers contains n elements?</span>
+
+```python
+'Electra' in towers
+```
 
 # Course Topics
 
