@@ -6,6 +6,7 @@ title: Sneaking Like a Python
 # Contents
 
 - [Basics](#basics)
+- [High Level Features](#high-level-features)
 - [Topics](#topics)
 - [Thanks](#thanks)
 
@@ -393,6 +394,8 @@ Hint: Standard library random module contains random.sample(population, k) funct
 Write a program which reads every line from the standard input and prints it to the standard output.
 
 Hint: for string s, there is a function s.strip() which remove any trailing and heading spaces/tabs/newline chars.
+
+# High Level Features
 
 # Course Topics
 
