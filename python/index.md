@@ -6,7 +6,8 @@ title: Sneaking Like a Python
 # Contents
 
 - [Basics](#basics)
-- [High Level Features](#high-level-features)
+- [Classes](#classes)
+- [Extras](#extras)
 - [Topics](#topics)
 - [Thanks](#thanks)
 
@@ -348,6 +349,32 @@ s = "blue rose"
 print(s.upper())  # "BLUE ROSE" should be printed
 ```
 
+## Strings
+
+Strings can be defined with either double-quote or a single quotes:
+
+```python
+"a string" == 'a string'
+```
+
+By default, splitting a line in the middle of a string is forbidden. To declare multi-line
+string the quote sign is written three times:
+
+```
+"""This is a multi
+line string"""
+````
+
+String containing non-string objects are called f-strings, they must be prefixed with f-letter.
+Non-string objects are surrounded in an f-string with curly braces:
+
+```python
+n = 12
+s = f"n = {n}"
+
+print(s)
+```
+
 ## Exercises:
 
 ### Exercise 1: Quotes
@@ -395,7 +422,37 @@ Write a program which reads every line from the standard input and prints it to 
 
 Hint: for string s, there is a function s.strip() which remove any trailing and heading spaces/tabs/newline chars.
 
-# High Level Features
+# Classes
+
+Classes are defined using the class keyword:
+
+```python
+class Mazda:
+    def go(self, source_location, dest_location):
+        # self is passed explicitly when instance function is called
+        print(f'Going from {source_location} to {dest_location}')
+
+    def print_slogan(self):
+        print("Driving matters")
+
+class Honda:
+    def go(self, source_location, dest_location):
+        print(f'Going from {source_location} to {dest_location}')
+
+
+    def print_slogan(self):
+        print('The Power of Dreams')
+
+class Ford:
+    def go(self, source_location, dest_location):
+        print(f'Going from {source_location} to {dest_location}')
+
+    def print_slogan(self):
+        print('Everything We Do is Driven By You')
+```
+
+
+# Extras
 
 # Course Topics
 
