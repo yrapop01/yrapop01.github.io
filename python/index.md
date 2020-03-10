@@ -385,6 +385,8 @@ The topics could be changed or corrected according to students' interests, level
 - Dimensionality reduction
 - K-Means
 
-# Thanks 
+# Thanks
 
 If you enjoyed the course feel free to send gratidute to its author: <a href="https://paypal.me/yrppt">paypal.me/yrppt</a>
+
+<img src="img/python-class.png" alt="python class"/>
