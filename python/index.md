@@ -240,7 +240,7 @@ Print in the interpreter the types and the values of:
 
 ## Sets and Dictionaries
 
-Sets and dictionaries are implemented in python with hashtables.
+Sets and dictionaries are implemented in python with hashtables. They are defained using curly brackets.
 
 ```python
 # Define a set of strings:
@@ -253,6 +253,18 @@ print(towers)
 ```python
 'Electra' in towers
 ```
+
+Dictionaries allow assotiating every key element in a set with a value.
+
+```python
+# Define a dictionary:
+towers = {'Tel Aviv': ['Azrieli', 'Electra'],
+          'Ramat Gan': ['Time', 'Atrium'],
+          'Haifa': ['Sail']}
+print(towers['Tel Aviv'])
+```
+
+<span style="color:red">What is the type of towers["Ramat Gan"]? How do you check it in python?</span>
 
 # Course Topics
 
