@@ -39,7 +39,7 @@ f = 5.5
 b = True
 null = None
 
-print(type("Hello"))
+print(type("Hello"))  # print function gets comma spereated list of objects and outputs them to the screen.
 print(type(n))
 print(type(f))
 print(type(b))
@@ -132,6 +132,13 @@ What is the complexity of the following operation (assuming the length of lst ls
 
 ## Indexing
 
+The length of any container (string, list, tuple, etc.) is returned by builtin len() function:
+
+```python
+x = [1, 2, 3, 4, 5]
+print(len(x))
+```
+
 Strings, lists and tuples can all be indexed and iterated. Indexing a container returns new container
 of the same type containing elements from the original one. The syntax of indexing a container x is
 
@@ -139,11 +146,30 @@ of the same type containing elements from the original one. The syntax of indexi
 x[i:j:k]
 ```
 
-where i, j, k specify the elements to be put in the output container: i is the first element,
-k is the distance between two subsequent elements, and j is the first index in the sequence "i, i+k, i+2*k, ..." not be put in the output.
-When i and j are negative the length of the container is added to them.  All three indexes can be ommited: 
-default value for i is 0, default value for j is the length of the container and default value of k is 1.
+where i, j, k specify the indexes sequence: i, i+k, i+2*k, ..., j. The output container contains
+all elements matching the indexes in that sequence in the input container, except the last one.
 
+There are shortcuts that allow avoiding explicit specification of i, j, or k. All the following
+boolean expressions True for any non empty container x:
+
+```python
+x[i] == x[i:i+1:1]
+x[i:j] == x[i:j:1]
+x[:j] == x[0:j]
+x[:] == x[0:len(x)]
+x[-1] == x[-1 + len(x)]
+x[::2] == x[0:len(x):2]
+x[-1:0:-1] == x[len(x):0:-1]
+
+x = '0123456789'
+x[::-1] == x[-1:0:-1] + x[0]
+```
+
+<span style="color:red"> In the interpreted print the values of s[0], s[-1], s[0:3], s[-6:], s[::5], s[::-3] for string s defined below:</span>
+
+```python
+s = "Rose is a rose is a rose"
+```
 
 # Course Topics
 
