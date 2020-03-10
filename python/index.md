@@ -3,13 +3,13 @@ header: Sneaking Like a Python
 title: Sneaking Like a Python
 ---
 
+<img src="img/python-class.png" width="800px" alt="python course"/>
+
 # Contents
 
 - [Basics](#basics)
 - [Topics](#topics)
 - [Thanks](#thanks)
-
-<img src="img/python-class.png" width="800px" alt="python course"/>
 
 # Basics
 
