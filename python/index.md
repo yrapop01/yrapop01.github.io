@@ -61,7 +61,7 @@ print(name + ", very nice to meet you" + ('!' * 10))
 <span style="color:red">What happens when two strings are added?</span><br/>
 <span style="color:red">What happens when string is multiplied by an integer?</span>
 
-### Arithmetic & Binary Operation
+### Arithmetic & Logical Operations
 
 Checking whether <!-- 322.0625 -\frac{(n^3 + 1456)}{16} > m --><math><mrow><mn>322</mn><mi>.</mi><mn>0625</mn><mo>-</mo><mfrac linethickness="1"><mrow><mrow><mo>(</mo><msup><mrow><mi>n</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>+</mo><mn>1456</mn><mo>)</mo></mrow></mrow><mrow><mrow><mn>16</mn></mrow></mrow></mfrac><mi>></mi><mi>m</mi></mrow></math> for n=12 and m=150:
 
