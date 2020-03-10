@@ -9,6 +9,8 @@ title: Sneaking Like a Python
 - [Topics](#topics)
 - [Thanks](#thanks)
 
+<img src="img/python-course.png" alt="python course"/>
+
 # Basics
 
 ## Comments
