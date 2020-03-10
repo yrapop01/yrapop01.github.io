@@ -1,4 +1,3 @@
--the above code in an interpreteri--
 header: How To Sneak Like a Python
 title: How To Sneak Like a Python
 ---
