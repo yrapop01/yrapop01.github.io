@@ -1,3 +1,4 @@
+---
 header: Sneaking Like a Python
 title: Sneaking Like a Python
 ---
