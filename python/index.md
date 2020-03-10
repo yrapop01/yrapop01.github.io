@@ -266,6 +266,134 @@ print(towers['Tel Aviv'])
 
 <span style="color:red">What is the type of towers["Ramat Gan"]? How do you check it in python?</span>
 
+Alternative way of creating a dictionary:
+
+```python
+x = dict(one=1, two=2, three=3)
+y = {'one': 1, 'two': 2, 'three': 3}
+
+print(x == y)
+```
+
+## Dictionary Arguments
+
+When arguments are passed to a function, they can be past as list (one after another) or as dictionary:
+
+```python
+def f(a, b, c):
+    print(a, b, c)
+
+f(1, 2, 3)
+f(a=1, b=2, c=3)
+
+## Default Arguments
+
+When declaring a function, default values can be attached to some arguments -- these arguments
+can be ommited when the function is called:
+
+```python
+def f(a, b, c=2):
+    print(c)
+
+f(1, 1)     # c=2
+f(1, 1, 4)  # c=4
+```
+
+## Importing Standard Library Function
+
+Python language has very rich standard library with lots of useful functions. For convinience these functions
+are split to different modules. For instance, functions dealing with randomness are put in a module named random.
+
+To use these function the required module must be first imported by its name with import command. For instance,
+random module is imported as follows:
+
+```python
+import random
+```
+
+Then module functions can be called:
+
+```python
+n = random.randint(0, 10)
+```
+
+The code above puts random integer between 0 and 10 in variable n.
+
+## Standard Input
+
+The module sys contains a variable stdin. It is a special variable that can be used in a for loop:
+
+```python
+import sys
+
+for line in sys.stdin:
+    print(len(line))
+```
+
+the code above prints the length of every line in the standard input.
+
+## Calling Instance Function
+
+Any variable in python is an object: it is assosiated with a predefined list of functions which get the related
+object as their first argument.
+
+To call the assosiated functions of an object, similar syntax to calling functions in a module is used.
+For instance, there is a function upper() that is associated with string objects and it makes all letters in a string to be uppercase.
+
+Here is how it can be used:
+
+```python
+s = "blue rose"
+print(s.upper())  # "BLUE ROSE" should be printed
+```
+
+## Exercises:
+
+### Exercise 1: Quotes
+
+```python
+# define a list of Shakespeare quotes
+quotes = ["When we are born, we cry...",
+          "My mistress' eyes are nothing like the sun...",
+          "There never was a story of more woe...",
+          "And the rain it raineth every day..."]
+```
+
+Write the following functions:
+
+- print_quote(i) that prints quote number i
+- print_quotes(i, j) which prints quotes from i to j (not including j)
+- print_random_quote() which prints a random quote
+- choose_and_print_quote() which lets the user choose a quote and then prints in
+- organazie_quotes() which asks the user each quote whether it is from play or from a sonnet and returns a dictionary with keys "play" and "sonnet" and with a list of quotes for each key.
+
+### Exercise 2: Reflection
+
+Write a function remove_non_reflection(d) which gets a dictionary
+and removes all keys that are not reflections of their values. That is,
+when the function is written the following expression should be equal to True:
+
+```python
+remove_non_reflection({"ab": "ba", "b": "a"}) == {"ab": "ba"}
+```
+
+### Exercise 3: Random Password Generator
+
+Write a python file named password_generator.py which contains a function named generate_password(n).
+The function should return a password of length n (n>2) with the following constrains:
+
+- The password contains only english lowercase and uppercase letters, digits and the signs !@#$%^&*.
+- The password must contains at least one uppercase letter and at least one digit.
+- Add logic that prints a random password of length 8 when the file is executed and not imported.
+
+Hint: Standard library random module contains random.sample(population, k) function. Look for its description in the internet or with Python's interpreter help function.
+
+### Exercise 4: Echo
+
+Write a program which reads every line from the standard input and prints it to the standard output.
+
+Hint: for string s, there is a function s.strip() which remove any trailing and heading spaces/tabs/newline chars.
+
 # Course Topics
 
 The topics could be changed or corrected according to students' interests, level and progress.
