@@ -9,7 +9,7 @@ title: Sneaking Like a Python
 - [Topics](#topics)
 - [Thanks](#thanks)
 
-<img src="img/python-course.png" alt="python course"/>
+<img src="img/python-class.png" alt="python course"/>
 
 # Basics
 
