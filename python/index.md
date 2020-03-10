@@ -1,4 +1,4 @@
----
+-the above code in an interpreteri--
 header: How To Sneak Like a Python
 title: How To Sneak Like a Python
 ---
@@ -39,7 +39,7 @@ f = 5.5
 b = True
 null = None
 
-print(type("Hello"))  # print function gets comma spereated list of objects and outputs them to the screen.
+print(type("Hello"))  # print() is used for putting things on screen
 print(type(n))
 print(type(f))
 print(type(b))
