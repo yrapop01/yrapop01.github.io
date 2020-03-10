@@ -171,6 +171,61 @@ x[::-1] == x[-1:0:-1] + x[0]
 s = "Rose is a rose is a rose"
 ```
 
+## Functions
+
+Functions are defined and called as follows:
+
+```python
+def function_name(argument):
+    print(argument) # notice the identation
+
+
+function_name(0) # call
+```
+
+Sample function which tells if a string is a palindrome:
+
+```python
+def is_palindrome(s):
+    return s == s[::-1]
+```
+
+To test the function above run:
+
+```python
+palindrome("abba")
+```
+
+## Indentation, Control Flows
+
+As you've noticed in function declaration, indentation is Python’s way of making blocks of statements.
+That is, all statements that may be followed by a block of code are terminated by a colon and the following
+lines are indented to the right. The block is terminated by a line which moves again to the left.
+
+```python
+# If:
+
+if 4 < 6 < 8:
+    if 9 < 5:
+        print('Jenny')
+    print('Jerry')
+else:
+    print('Lenny')
+    
+# While:
+
+i = 0
+lst = []
+while i < 10:
+    lst = lst + [i]
+    #lst.append(i)
+    i += 1
+
+print(lst)
+```
+
+<span style="color:red">What would be the output of the code above (run it in the interpreter to verify your answer)?</span>
+
 # Course Topics
 
 The topics could be changed or corrected according to students' interests, level and progress.
