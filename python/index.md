@@ -618,6 +618,30 @@ print(z.value)
 
 <span style="color:red">What does the code above print?</span><br/>
 
+### Constructors
+
+Special method `__init__()` is called when an instance object is created.
+
+```python
+class C:
+    def __init__(self):
+        print('New C instance is created')
+
+c = C() # C.__init__() is automatically called during instance creation.
+```
+
+`__init__()` method can get more arguments:
+
+```python
+class C:
+    def __init__(self, x):
+        print('x =', x)
+
+c = C(5) # 'x = 5' is printed during instance object creation.
+```
+
+`__init__()` methods are called constructors in computer science literature.
+
 # Extras
 
 # Course Topics
