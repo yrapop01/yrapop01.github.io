@@ -942,7 +942,7 @@ The loop above prints:
 3
 ```
 
-Generators can also be used stand alone. For instance, they can be converted to lists.
+Generators can also be used standalone. For instance, they can be converted to lists.
 
 ```python
 def range_generator(n):
@@ -998,10 +998,10 @@ def infinite():
         yield
 ```
 
-### Tuple Comprehensions
+### Generator Comprehensions
 
 Generators can also be created by using a comprehension. Generator comprehension has the same syntax
-as list comprehension with one difference, it is written inside parenthesis intead of square brackets.
+as list comprehension with one difference - it is written inside parenthesis instead of square brackets.
 
 ```python
 # the object comprehension is generator
@@ -1011,7 +1011,7 @@ comprehension = (i * i for i in [1, 2, 3, 4])
 ### Builtin Generators
 
 Many standard library functions are implemented as generators. For instance, the aforementioned `range()`
-function is in fact a generator. Another popular generate is `enumerate()`: it gets as input another
+function is in fact a generator. Another popular generator is `enumerate()`: it gets as input another
 iterable object (it can be list/tuple/another generator/etc.) and creates generator which yields pairs
 of values: the first item in every pair is the pair index and the second item is the value at that index
 of the original iterator.
@@ -1034,7 +1034,7 @@ The output of the loop above would be:
 3 'D'
 ```
 
-This loop can be also rewritten with a syntax more suitable for generators which return pairs of values:
+This loop can be also rewritten with a syntax more suitable for pairs of values:
 
 ```python
 letters = 'ABCD'
@@ -1043,14 +1043,14 @@ for index, letter in enumerate(letters):
     print(index, letter)
 ```
 
-As you see in the example before pairs of values can be expanded into two variables.
+As you see in the example above pair of values can be expanded into two variables.
 
 ## Exercises
 
 ### Exercise 1: Natural Numbers
 
-Write generator comprehension that uses `infinite()` generator defined above to create new generator
-that lists all natural numbers (including 0).
+Write generator comprehension (without `def`) that uses `infinite()` generator defined above to create new generator
+that lists all non-negative integer numbers.
 
 # Extras
 
