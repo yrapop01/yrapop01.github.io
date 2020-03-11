@@ -1,6 +1,6 @@
 ---
-header: Sneaking Like a Python
-title: Sneaking Like a Python
+header: Python Language Tutorial
+title: Python Language Tutorial
 ---
 
 # Contents
@@ -132,6 +132,15 @@ What is the complexity of the following operation (assuming the length of lst ls
 5 in lst # => True
 ```
 
+For loops can be used to iterate lists and tuples:
+
+```python
+# print all values in a list one by one.
+
+for value in lst:
+    print(value)
+```
+
 ## Indexing
 
 The length of any container (string, list, tuple, etc.) is returned by builtin len() function:
@@ -171,6 +180,14 @@ x[::-1] == x[-1:0:-1] + x[0]
 
 ```python
 s = "Rose is a rose is a rose"
+```
+
+While lists, tuples and strings can be indexed only be integer, dictionaries can be index by many different types.
+
+```python
+capitals = {'Moscow': 'Russia', 'London':, 'United Kingdom', 'Valetta': 'Malta', 'Monaco': 'Monaco'}
+
+print('London is the capital of', capitals['London'])
 ```
 
 ## Functions
@@ -389,15 +406,15 @@ quotes = ["When we are born, we cry...",
 
 Write the following functions:
 
-- print_quote(i) that prints quote number i
-- print_quotes(i, j) which prints quotes from i to j (not including j)
-- print_random_quote() which prints a random quote
-- choose_and_print_quote() which lets the user choose a quote and then prints in
-- organazie_quotes() which asks the user each quote whether it is from play or from a sonnet and returns a dictionary with keys "play" and "sonnet" and with a list of quotes for each key.
+- `print_quote(i)` that prints quote number i
+- `print_quotes(i, j)` which prints quotes from i to j (not including j)
+- `print_random_quote()` which prints a random quote
+- `choose_and_print_quote()` which lets the user choose a quote and then prints it
+- `organazie_quotes()` which asks the user each quote whether it is from play or from a sonnet and returns a dictionary with keys "play" and "sonnet" and with a list of quotes for each key.
 
 ### Exercise 2: Reflection
 
-Write a function remove_non_reflection(d) which gets a dictionary
+Write a function `remove_non_reflection(d)` which gets a dictionary
 and removes all keys that are not reflections of their values. That is,
 when the function is written the following expression should be equal to True:
 
@@ -407,7 +424,7 @@ remove_non_reflection({"ab": "ba", "b": "a"}) == {"ab": "ba"}
 
 ### Exercise 3: Random Password Generator
 
-Write a python file named password_generator.py which contains a function named generate_password(n).
+Write a python file named `password_generator.py` which contains a function named `generate_password(n)`.
 The function should return a password of length n (n>2) with the following constrains:
 
 - The password contains only english lowercase and uppercase letters, digits and the signs !@#$%^&*.
@@ -424,10 +441,45 @@ Hint: for string s, there is a function s.strip() which remove any trailing and 
 
 # Classes
 
+Namespace is an association between names and values. For instance, python dictionary can be seen as namespace:
+
+```python
+{'name1': 'value1', 'name2': 'value2'}
+```
+
+Dictionary defined above assosiates names 'name1', 'name2' with values 'value1', 'value2' respectively. To get a value
+from dictionary we use indexing syntax: d['key'] gets the value associated with name 'key' from dictionary d.
+
+Python modules are also namespaces with completely different indexing syntax: to get a value of a certain name in module we
+write module name followed by a dot followed by the required variable name:
+
+```python
+import module
+
+value = module.key 
+```
+
+### Objects
+
+Another example of a namespace is object instance. Like in dictionaries, values to object instances can be added dynamically,
+however the syntax for accessing object's values is similar to that of modules:
+
+```python
+obj = object()
+obj.x = 'new value' # new values can be added dynamically like in classes
+
+print(obj.x)
+```
+
+### Classes
+
+Other kind of namespace is class. Functions and variables can be bound together by putting them in the same class.
 Classes are defined using the class keyword:
 
 ```python
 class Mazda:
+    NAME = 'MAZDA'
+
     def go(self, source_location, dest_location):
         # self is passed explicitly when instance function is called
         print(f'Going from {source_location} to {dest_location}')
@@ -436,6 +488,8 @@ class Mazda:
         print("Driving matters")
 
 class Honda:
+    NAME = 'HONDA'
+
     def go(self, source_location, dest_location):
         print(f'Going from {source_location} to {dest_location}')
 
@@ -444,6 +498,8 @@ class Honda:
         print('The Power of Dreams')
 
 class Ford:
+    NAME = 'FORD'
+
     def go(self, source_location, dest_location):
         print(f'Going from {source_location} to {dest_location}')
 
@@ -451,6 +507,35 @@ class Ford:
         print('Everything We Do is Driven By You')
 ```
 
+To get value of an assosiated name from class we use similar syntax to getting a variable from a module or an object:
+
+```python
+print(Mazda.NAME)
+```
+
+### Instances
+
+A more advanced kind of namespace is an instance. Instance is an object that is also associated with a class. So any
+name that was dynamically added added to object instance and also any name defined in a class can be accessed through an instance.
+
+Instances are created by calling classes as if they were functions.
+
+```python
+mazda = Mazda()
+
+mazda.year = 1995 # new values can be added dynamically like in objects
+print(mazda.NAME) # class values can be accessed like in classes
+```
+
+Notice that in the following example, car instance can be associated with different classes,
+however, the code works since all of them have a function `print_slogan()`:
+
+```python
+brands = [Mazda(), Honda(), Ford()] # list of instances
+
+for brand in brands:
+    brand.print_slogan()
+```
 
 # Extras
 
