@@ -319,7 +319,7 @@ f(1, 1)     # c=2
 f(1, 1, 4)  # c=4
 ```
 
-## Importing Standard Library Function
+## Importing Standard Library Functions
 
 Python language has very rich standard library with lots of useful functions. For convinience these functions
 are split to different modules. For instance, functions dealing with randomness are put in a module named random.
@@ -383,8 +383,8 @@ string the quote sign is written three times:
 line string"""
 ````
 
-String containing non-string objects are called f-strings, they must be prefixed with f-letter.
-Non-string objects are surrounded in an f-string with curly braces:
+String containing calculated expressions objects are called f-strings, they must be prefixed with f-letter.
+Expressions are surrounded in an f-string with curly braces:
 
 ```python
 n = 12
