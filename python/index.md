@@ -811,8 +811,6 @@ deallocating resources
 
 # Comprehensions
 
-## List object
-
 Lists in Python are instances of class list. This class has many functions, for instance `list.append()` adds element to a list.
 
 ```python
@@ -823,7 +821,79 @@ lst.append(5)
 print(lst[4]) # 5 should be printed
 ```
 
-To creat
+Assume we have a list of number lst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 10]. One way to create another list, named squares,
+which contains square value of every element in lst is to created an empty list and append square values to it:
+
+```python
+lst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+squares = [] # creating an empty list
+
+for v in lst:
+    squares.append(v * v)
+```
+
+Another way is to use list comprehension. If we we know that one list is created from another, we can
+specify the expression and for loop object inside square brackets to create new list:
+
+```python
+squares = [v * v for v in lst]
+```
+
+Both ways create new list named `squares` which contains the numbers: 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
+
+Itaration which filters some element from the original list can also be converted to list comprehension. Both
+of the code snipplets below create new list named `odd_squares` which contains the numbers: 1, 9, 25, 49, 81.
+
+```python
+# Creating odd_squares with regular for loop
+
+squares = []
+for v in lst:
+    if v % 2 == 1:
+        squares.append(v ** 2)
+```
+
+```python
+# Creating odd_squares using list comprehension
+
+squares = [v ** 2 for v in lst if v % 2 == 1]
+```
+
+Another exmaple of using list comprehension:
+
+```python
+# builtin function range(n, m) returns an object which can
+# be converted to list containing all numbers: n, n+1, ..., m-1;
+#
+# builtin functions ord(letter) return ascii code of a letter.
+#
+# builtin function chr(code) returns a letter with the given ascii code.
+
+letters_ascii = list(range(ord('A'), ord('Z') + 1))
+
+lst1 = []
+for i in letters_ascii:
+    lst1.append(chr(i))
+    lst2 = [chr(i) for i in letters_ascii]
+
+# lst1 equals lst2 and they both equal a list with english alphabet.
+lst1 == lst2 == ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+'U', 'V', 'W', 'X', 'Y', 'Z']
+```
+
+### Dictionary Comprehension
+
+Dictionaries can also be created with dictionary comprehension.
+
+```python
+ascii_letters = range(ord('A'), ord('Z') + 1)
+d = {chr(i): i for i in ascii_letters}
+d
+```
+
+<span style="color:red">What does variable d contain?</span>
 
 # Extras
 
