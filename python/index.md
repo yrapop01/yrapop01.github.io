@@ -551,6 +551,12 @@ car.go('LA', 'NY')
 
 ### Lookup Order
 
+The lookup order of a name in an instance is as followed: if the name was added to the instance object
+then the assisiated value is returned, otherwise, if that name was defined in the instance class then
+the value defined in the class is returned.
+
+### Inheritance
+
 # Extras
 
 # Course Topics
