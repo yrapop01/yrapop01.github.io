@@ -667,7 +667,7 @@ z = f(1, 2) # The value of z is 3
 
 ### Exercise 1: Counter
 
-# Implement class which allows making callable instances that have also a variable `count` which tells the number of times they were called:
+Implement class which allows making callable instances that have also a variable `count` which tells the number of times they were called:
 
 ```python
 class F:
@@ -811,7 +811,19 @@ deallocating resources
 
 # Comprehensions
 
+## List object
 
+Lists in Python are instances of class list. This class has many functions, for instance `list.append()` adds element to a list.
+
+```python
+lst = [1, 2, 3, 4]
+
+lst.append(5)
+
+print(lst[4]) # 5 should be printed
+```
+
+To creat
 
 # Extras
 
