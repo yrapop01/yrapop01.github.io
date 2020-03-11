@@ -304,6 +304,7 @@ def f(a, b, c):
 
 f(1, 2, 3)
 f(a=1, b=2, c=3)
+```
 
 ## Default Arguments
 
@@ -547,6 +548,8 @@ car = brands[i]
 
 car.go('LA', 'NY')
 ```
+
+### Lookup Order
 
 # Extras
 
