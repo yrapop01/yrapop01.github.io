@@ -895,6 +895,17 @@ d
 
 <span style="color:red">What does variable d contain?</span>
 
+Sets can be created with set comprehension.
+
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 8, 10]
+
+{i for i in numbers} == set(numbers)
+```
+
+# Generators
+
 # Extras
 
 # Course Topics
