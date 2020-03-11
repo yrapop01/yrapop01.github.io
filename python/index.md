@@ -537,6 +537,15 @@ for brand in brands:
     brand.print_slogan()
 ```
 
+Therefore, if two objects have the same functions then they can be used interchangeably:
+
+```python
+i = int(input("Pick a number from 0 to {len(brands)}")
+car = brands[i]
+
+car.go('LA', 'NY')
+```
+
 # Extras
 
 # Course Topics
