@@ -921,6 +921,137 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 8, 10]
 
 # Generators
 
+Generator is a function that can return multiple objects multiple times. Values are returned from
+generator using the `yield` keywork. Generators can be used in for loops.
+
+```python
+def generator():
+    yield 1
+    yield 2
+    yield 3
+
+for i in generator():
+    print(i)
+```
+
+The loop above prints:
+
+```
+1
+2
+3
+```
+
+Generators can also be used stand alone. For instance, they can be converted to lists.
+
+```python
+def range_generator(n):
+    i = 0
+
+    while i < n:
+        yield i
+        i += 1
+
+def range_list(n):
+    lst = []
+    i = 0
+    while i < n:
+        lst.append(i)
+        i += 1
+    return lst
+
+for i in range_list(3):
+    print(i)
+
+for i in range_generator(3):
+    print(i)
+
+for i in list(range_generator(3)):
+    print(i)
+```
+
+In the sample above, all loops do eventually the same thing: they print numbers from 0 to 2.
+
+Generator is also an object. It is constructed when generator function is called and it can be used in iteration only once.
+
+```python
+
+values = range_generator(2)
+values_as_list = list(values)
+print('The values are: ', list(values))
+
+try:
+    values = range_generator(2)
+    values[0]
+except TypeError as e:
+    print('Error:', e)
+```
+
+<span style="color:red">Why an empty list was printed? Why did the error occur?</span>
+
+Generator function can yield infinite number of times. The following code is legal:
+
+```python
+def infinite():
+    while True:
+        # yielding without a value is the same as yielding None
+        yield
+```
+
+### Tuple Comprehensions
+
+Generators can also be created by using a comprehension. Generator comprehension has the same syntax
+as list comprehension with one difference, it is written inside parenthesis intead of square brackets.
+
+```python
+# the object comprehension is generator
+comprehension = (i * i for i in [1, 2, 3, 4])
+```
+
+### Builtin Generators
+
+Many standard library functions are implemented as generators. For instance, the aforementioned `range()`
+function is in fact a generator. Another popular generate is `enumerate()`: it gets as input another
+iterable object (it can be list/tuple/another generator/etc.) and creates generator which yields pairs
+of values: the first item in every pair is the pair index and the second item is the value at that index
+of the original iterator.
+
+```python
+letters = 'ABCD'
+
+for index_letter in enumerate(letters):
+    index = index_letter[0]
+    letter = index_letter[1]
+    print(index, letter)
+```
+
+The output of the loop above would be:
+
+```
+0 'A'
+1 'B'
+2 'C'
+3 'D'
+```
+
+This loop can be also rewritten with a syntax more suitable for generators which return pairs of values:
+
+```python
+letters = 'ABCD'
+
+for index, letter in enumerate(letters):
+    print(index, letter)
+```
+
+As you see in the example before pairs of values can be expanded into two variables.
+
+## Exercises
+
+### Exercise 1: Natural Numbers
+
+Write generator comprehension that uses `infinite()` generator defined above to create new generator
+that lists all natural numbers (including 0).
+
 # Extras
 
 # Course Topics
