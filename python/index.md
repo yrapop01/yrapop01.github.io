@@ -549,13 +549,71 @@ car = brands[i]
 car.go('LA', 'NY')
 ```
 
-### Lookup Order
+### Inheritance and Lookup Order
+
+Classes can be inherited:
+
+```python
+class Acura(Honda):
+    def print_slogan(self):
+        print('The road will never be the same.')
+
+acura = Acura()
+acura.print_slogan()
+acura.go('A', 'B')
+````
 
 The lookup order of a name in an instance is as followed: if the name was added to the instance object
 then the assisiated value is returned, otherwise, if that name was defined in the instance class then
-the value defined in the class is returned.
+the value defined in the class is returned. If the name found niether in an object nor in the class then
+it is looked up in all the ancestor classes (the classes from which object class was inherited).
 
-### Inheritance
+The exact lookup order can be checked using __mro__ variable that is automatically attached to all classes (since python3).
+
+```python
+print(Acura.__mro__)
+```
+
+### Instance Argument
+
+When a function defined in a class is called from an instances, the instance object is automatically passed as first argument.
+
+class C:
+    def f(self):
+        print(self.key)
+
+c = C()                 # create an instance
+c.key = 'object field'  # add a variable to instance object
+c.f()                   # the isntance argument (`c`) is passed automatically: `f()` will print "object field"
+
+There is a convension of naming instance argument `self`.
+
+### Special Method Names
+
+Class functions are also called methods. There is a family of methods with predefined names that are called special methods.
+These methods are used to implement behaviour of built in operations on instances (such as addition, multiplication and others).
+
+For example, `__add__()` method can be used to implement a class whose instances can be added:
+
+```python
+class Addable:
+    def __add__(self, other):
+        result = Addable()
+        result.value = self.value + other.value
+        return result
+
+x = Addable()
+y = Addable()
+
+x.value = 'Hello, '
+y.value = 'World!'
+
+z = x + v
+
+print(z.value)
+```
+
+<span style="color:red">What does the code above print?</span><br/>
 
 # Extras
 
