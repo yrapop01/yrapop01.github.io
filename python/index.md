@@ -8,6 +8,7 @@ title: Python Language Tutorial
 - [Basics](#basics)
 - [Classes](#classes)
 - [Exceptions](#exceptions)
+- [Comprehensions](#comprehensions)
 - [Extras](#extras)
 - [Topics](#topics)
 - [Thanks](#thanks)
@@ -622,7 +623,7 @@ z = x + v
 print(z.value)
 ```
 
-<span style="color:red">What does the code above print?</span><br/>
+<span style="color:red">What does the code above print?</span>
 
 ### Constructors
 
@@ -687,6 +688,130 @@ Implement a tic-tac-toe game. On each turn show the board to the user, ask the u
 If there are winner or a draw in the end of the turn - stop the game. Otherwise, proceed to next turn.
 
 # Exceptions
+
+Exceptions are errors that occur during the execution of a program. For instance, dividing a num-
+ber by zero raises an exception.
+
+```python
+57 / 0 # this raises an exception
+```
+
+The exceptions can be of different types. For instance the operation above raises exception of type ZeroDivisionError.
+
+If the exception is not handled, it stops the execution.  It is possible to handle exceptions. To do this surround
+the code section which raises the exception with try and except.
+
+```python
+def f(lst):
+    try:
+        lst[100] = 8
+        print('Will this be printed?')
+    except Exception:
+        pass # Skipping exception without printing any message
+             # is not always good idea.
+
+print('Good Morning!')
+f([1, 2])
+```
+
+<span style="color:red">What does the code above print? Why</span>
+
+Exception type can be specified after except keyword - only exception of specified type will be handled.
+The example above raises IndexError and therefore we could replace `except Exception` by `except IndexError`:
+
+```python
+def f(lst):
+    try:
+        lst[100] = 8
+        print('Will this be printed?')
+    except IndexError:
+        pass # Skipping exception without printing any message
+             # is not always good idea.
+
+print('Good Morning!')
+f([1, 2])
+```
+
+When exceptions are raised, object instances that describe the error are created.
+We can access those instances with `as` keyword in `except` statement:
+
+```python
+try:
+    57 / 0
+except ZeroDivisionError as e:
+    print('Error:', str(e))
+```
+
+### Traceback
+
+Instead of printing only the error message traceback module can be used to trace back exceptions to their origin.
+
+```python
+import traceback
+
+# frozen sets are sets that cannot be changed
+s = frozenset({1, 2})
+
+try:
+    s.add(0)
+except TypeError:
+    traceback.print_exc()
+```
+
+### Raise
+
+Exceptions can be raised manually using the raise keyword:
+
+```python
+raise Exception('Something went wrong')
+```
+
+### Resource Deallocation
+
+If unhandled exception is raised in the middle of program execution then the commands that were planned to be executed in the end will not be reached.
+It is unacceptable programs that allocate resources in the begging of the work and free them in the end. To handle such scenarious finally keyword can be used.
+Code that is written in finally block is executed whether exception is raised or not.
+
+```python
+do_raise = input('Should we raise an exception (answer with y/n)?')
+
+try:
+    if do_raise == 'y':
+        raise Exception("Stop execution flow")
+finnaly:
+    print("This should be printed for any do_raise value")
+```
+
+Another way to free resources even when exception occur is by using `__enter__()` and `__exit__()` special methods and with statement.
+
+```python
+class Resource:
+    def __init__(self):
+        print('resource object instance created')
+
+    def __enter__(self):
+        print('allocating resources')
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print('deallocating resources')
+
+with Resource():
+    do_raise = input('Should we raise an exception (answer with y/n)?')
+    if do_raise == 'y':
+        raise Exception("Stop execution flow")
+```
+
+The output of the code above does not depend on the value of `do_raise` variable, it will always be:
+
+```
+resource object instance created
+allocating resources
+deallocating resources
+```
+
+# Comprehensions
+
+
 
 # Extras
 
