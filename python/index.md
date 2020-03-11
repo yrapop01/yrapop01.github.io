@@ -185,7 +185,7 @@ s = "Rose is a rose is a rose"
 While lists, tuples and strings can be indexed only be integer, dictionaries can be index by many different types.
 
 ```python
-capitals = {'Moscow': 'Russia', 'London':, 'United Kingdom', 'Valetta': 'Malta', 'Monaco': 'Monaco'}
+capitals = {'Moscow': 'Russia', 'London':, 'United Kingdom', 'Monaco': 'Monaco'}
 
 print('London is the capital of', capitals['London'])
 ```
@@ -351,7 +351,7 @@ for line in sys.stdin:
 
 the code above prints the length of every line in the standard input.
 
-## Calling Instance Function
+## Calling Instance Functions
 
 Any variable in python is an object: it is assosiated with a predefined list of functions which get the related
 object as their first argument.
@@ -441,14 +441,16 @@ Hint: for string s, there is a function s.strip() which remove any trailing and 
 
 # Classes
 
-Namespace is an association between names and values. For instance, python dictionary can be seen as namespace:
+### Namespaces
+
+Namespace is an association between names and values. For instance, any python dictionary can be seen as a namespace:
 
 ```python
-{'name1': 'value1', 'name2': 'value2'}
+{'key1': 'value1', 'key2': 'value2'}
 ```
 
-Dictionary defined above assosiates names 'name1', 'name2' with values 'value1', 'value2' respectively. To get a value
-from dictionary we use indexing syntax: d['key'] gets the value associated with name 'key' from dictionary d.
+Dictionary defined above assosiates names 'key1' and 'key2' with values 'value1' and 'value2' respectively. To get a value
+from dictionary we use brackets: d['key'] gets the value associated with name 'key' from dictionary d.
 
 Python modules are also namespaces with completely different indexing syntax: to get a value of a certain name in module we
 write module name followed by a dot followed by the required variable name:
@@ -461,19 +463,19 @@ value = module.key
 
 ### Objects
 
-Another example of a namespace is object instance. Like in dictionaries, values to object instances can be added dynamically,
+Another example of a namespace is an object. Like in dictionaries, values to object instances can be added dynamically,
 however the syntax for accessing object's values is similar to that of modules:
 
 ```python
 obj = object()
-obj.x = 'new value' # new values can be added dynamically like in classes
+obj.x = 'new value' # new values can be added dynamically like in dictionaries
 
-print(obj.x)
+print(obj.x) # values are accessed using the dot syntax
 ```
 
 ### Classes
 
-Other kind of namespace is class. Functions and variables can be bound together by putting them in the same class.
+Other kind of namespace is a class. Functions and variables can be bound together by putting them in the same class.
 Classes are defined using the class keyword:
 
 ```python
@@ -507,7 +509,7 @@ class Ford:
         print('Everything We Do is Driven By You')
 ```
 
-To get value of an assosiated name from class we use similar syntax to getting a variable from a module or an object:
+To get values from classes we use similar syntax to that of modules and objects:
 
 ```python
 print(Mazda.NAME)
@@ -516,7 +518,7 @@ print(Mazda.NAME)
 ### Instances
 
 A more advanced kind of namespace is an instance. Instance is an object that is also associated with a class. So any
-name that was dynamically added added to object instance and also any name defined in a class can be accessed through an instance.
+name that was dynamically added to an object and also any name defined in a class can be accessed through an instance.
 
 Instances are created by calling classes as if they were functions.
 
@@ -527,8 +529,8 @@ mazda.year = 1995 # new values can be added dynamically like in objects
 print(mazda.NAME) # class values can be accessed like in classes
 ```
 
-Notice that in the following example, car instance can be associated with different classes,
-however, the code works since all of them have a function `print_slogan()`:
+Notice that in the following example, `brand` instance is associated with different classes during
+loop execution, however, the code still works since all of them have a function `print_slogan()`:
 
 ```python
 brands = [Mazda(), Honda(), Ford()] # list of instances
