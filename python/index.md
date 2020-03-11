@@ -7,6 +7,7 @@ title: Python Language Tutorial
 
 - [Basics](#basics)
 - [Classes](#classes)
+- [Exceptions](#exceptions)
 - [Extras](#extras)
 - [Topics](#topics)
 - [Thanks](#thanks)
@@ -192,17 +193,18 @@ print('London is the capital of', capitals['London'])
 
 ## Functions
 
-Functions are defined and called as follows:
+Statement sequences can be put in a functions. Functions are defined and called as follows:
 
 ```python
-def function_name(argument):
-    print(argument) # notice the identation
+def function_name():
+    print('Code inside function') # notice the identation
 
 
-function_name(0) # call
+function_name() # call
+function_name() # another call
 ```
 
-Sample function which tells if a string is a palindrome:
+Functions can get arguments and return values. The following function gets a string and returns boolean value which tells if a string is a palindrome:
 
 ```python
 def is_palindrome(s):
@@ -579,14 +581,18 @@ print(Acura.__mro__)
 When a function defined in a class is called from an instances, the instance object itself is automatically passed as first argument.
 
 ```python
-class C:
+class CLASS:
     def f(self):
         print(self.key)
 
-c = C()                 # create an instance
-c.key = 'object field'  # add a variable to instance object
+instance = CLASS()             # create an instance
+instance.key = 'object field'  # add a variable to instance object
 
-c.f() # instance argument is passed automatically: `f()` will print "object field"
+# CLASS.f can be called either from class namespaces
+CLASS.f(instance)
+
+# CLASS.f can also be called from instance.
+instance.f() # instance argument is passed automatically
 ```
 
 There is a convenrsion to name instance object argument `self`.
@@ -641,6 +647,46 @@ c = C(5) # 'x = 5' is printed during instance object creation.
 ```
 
 `__init__()` methods are called constructors in computer science literature.
+
+### Callables
+
+Another special method `__call__()` allows creating instances that can be called as if they were functions.
+
+```python
+class F:
+    def __call__(self, x, y):
+        return x + y
+
+f = F()
+
+z = f(1, 2) # The value of z is 3
+```
+
+## Exercises:
+
+### Exercise 1: Counter
+
+# Implement class which allows making callable instances that have also a variable `count` which tells the number of times they were called:
+
+```python
+class F:
+    ... # implement this
+
+f = F() # create the instance
+f()     # call F.__call__(f)
+
+print(f.count)  # Should print 1
+f()
+
+print(f.count) # Should print 2
+```
+
+### Exercise 2: Tic-Tac-Toe 
+
+Implement a tic-tac-toe game. On each turn show the board to the user, ask the user to choose a cell for O, let you algorithm choose a cell for X.
+If there are winner or a draw in the end of the turn - stop the game. Otherwise, proceed to next turn.
+
+# Exceptions
 
 # Extras
 
