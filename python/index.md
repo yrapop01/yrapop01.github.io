@@ -576,7 +576,7 @@ print(Acura.__mro__)
 
 ### Instance Argument
 
-When a function defined in a class is called from an instances, the instance object is automatically passed as first argument.
+When a function defined in a class is called from an instances, the instance object itself is automatically passed as first argument.
 
 ```python
 class C:
@@ -585,10 +585,11 @@ class C:
 
 c = C()                 # create an instance
 c.key = 'object field'  # add a variable to instance object
-c.f()                   # the isntance argument (`c`) is passed automatically: `f()` will print "object field"
+
+c.f() # instance argument is passed automatically: `f()` will print "object field"
 ```
 
-There is a convension of naming instance argument `self`.
+There is a convenrsion to name instance object argument `self`.
 
 ### Special Method Names
 
