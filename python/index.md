@@ -769,7 +769,7 @@ raise Exception('Something went wrong')
 ### Resource Deallocation
 
 If unhandled exception is raised in the middle of program execution then the commands that were planned to be executed in the end will not be reached.
-It is unacceptable programs that allocate resources in the begging of the work and free them in the end. To handle such scenarious finally keyword can be used.
+`finally` construct can be used to handle scenarious where resources should be freed in the end.
 Code that is written in finally block is executed whether exception is raised or not.
 
 ```python
