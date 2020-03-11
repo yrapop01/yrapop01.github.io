@@ -543,7 +543,7 @@ for brand in brands:
 Therefore, if two objects have the same functions then they can be used interchangeably:
 
 ```python
-i = int(input("Pick a number from 0 to {len(brands)}")
+i = int(input(f"Pick a number from 0 to {len(brands)}")
 car = brands[i]
 
 car.go('LA', 'NY')
@@ -578,6 +578,7 @@ print(Acura.__mro__)
 
 When a function defined in a class is called from an instances, the instance object is automatically passed as first argument.
 
+```python
 class C:
     def f(self):
         print(self.key)
@@ -585,6 +586,7 @@ class C:
 c = C()                 # create an instance
 c.key = 'object field'  # add a variable to instance object
 c.f()                   # the isntance argument (`c`) is passed automatically: `f()` will print "object field"
+```
 
 There is a convension of naming instance argument `self`.
 
