@@ -1060,7 +1060,7 @@ The topics could be changed or corrected according to students' interests, level
 
 # Thanks
 
-Please contact <img src="img/email.svg" alt="email"/> if you're interesed in solutions to exercises in the tutorial.
+Please contact <img src="img/email.svg" alt="email" align="middle"/> if you're interesed in solutions to exercises in the tutorial.
 
 If you enjoyed the course feel free to send gratidute to its author: <a href="https://paypal.me/yrppt">paypal.me/yrppt</a>
 
