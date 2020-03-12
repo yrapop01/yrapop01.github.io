@@ -1060,8 +1060,8 @@ The topics could be changed or corrected according to students' interests, level
 
 # Thanks
 
-If you enjoyed the course feel free to send gratidute to its author: <a href="https://paypal.me/yrppt">paypal.me/yrppt</a>
-
 Please contact <img src="img/email.svg" alt="email"/> if you're interesed in solutions to exercises in the tutorial.
+
+If you enjoyed the course feel free to send gratidute to its author: <a href="https://paypal.me/yrppt">paypal.me/yrppt</a>
 
 <img src="img/python-class.png" alt="python class"/>
