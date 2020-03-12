@@ -6,6 +6,7 @@
         html, body {
             background-color: #d8ff89;
         }
+
         svg {
             margin: auto;
             left: 1%;
@@ -13,7 +14,17 @@
             top: 1%;
             bottom: 1%;
             position: absolute;
-            max-width: 80%;
+        }
+
+        @media (orientation: landscape) {
+            svg {
+               max-width: 80%;
+            }
+        }
+        @media (orientation: portrait) {
+            svg {
+               max-width: 100%;
+            }
         }
     </style>
 </head>
