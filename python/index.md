@@ -1071,4 +1071,3 @@ If you enjoyed the course feel free to send gratidute to its author: <a href="ht
 ### Goodbye
 
 <img src="img/python-class.png" alt="python class"/>
-
