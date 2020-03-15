@@ -1261,16 +1261,22 @@ print(double_length('12345'))
 Lets go over the sample above line by line:
 
 Line 1: First we declare `duplicated()` function which gets another function as a variable.
+
 Line 2: The we declare an inner function named `wrapper` which gets arbitrary ordered and keyword arguments.
+
 Line 3: Inside wrapper we call the function that was passed to `duplicated()` (we can do this since inner functions
 see variables from the outer functions) and pass to it the arguments that will be passed when someone will
 call `wrapper()`, we then multiply the result by 2.
+
 Line 5: We return the inner function `wrapper()` from `duplicated()`
+
 Lines 7-8: We declare a function called `double_length` that returns the length of any input sequence.
+
 Line 10: We call `duplicated` pass the function `double_length()` as an argument. When duplicated is executed it creates and then returns
 an inner function `wrapper` that will, in its turn, return two times the length of any input sequence. We put the returned
 function in a function variable `double_length`.
-Line 11: We print the output of the call to double len with input '12345' (the number 10 will be printed)
+
+Line 11: We print the output of the call to double len with input '12345' (the number 10 will be printed).
 
 We could have spared line 10 in the sample above by using the decorator syntax (which does exactly the same thing):
 
