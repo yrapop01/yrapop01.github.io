@@ -10,7 +10,8 @@ title: Python Language Tutorial
 - [Classes](#classes)
 - [Exceptions](#exceptions)
 - [Comprehensions](#comprehensions)
-- [Extras](#extras)
+- [Features](#higher-level-features)
+- [Closures](#closures)
 - [Topics](#topics)
 - [Thanks](#thanks)
 
@@ -312,7 +313,7 @@ y = {'one': 1, 'two': 2, 'three': 3}
 print(x == y)
 ```
 
-## Dictionary Arguments
+## Keyword Arguments
 
 When arguments are passed to a function, they can be past as list (one after another) or as dictionary:
 
@@ -1052,11 +1053,248 @@ As you see in the example above pair of values can be expanded into two variable
 Write generator comprehension (without `def`) that uses `infinite()` generator defined above to create new generator
 that lists all non-negative integer numbers.
 
-# Extras
+# Higher Level Features
 
-# Course Topics
+## List, Tuple Expansion
 
-The topics could be changed or corrected according to students' interests, level and progress.
+In python, multiple assignments can be done in one line:
+
+```python
+i, j = 5, 9
+print(i, j)
+```
+
+Finite sequences can be assignment to sequences of variables:
+
+```python
+coordinates = ['hello', 8.9, 10]
+[x, y, z] = coordinates
+print(x, y, z)
+```
+
+## Function Variables
+
+In Python, functions are first class citizens: they can be treated as a variable.
+
+```python
+
+def f():
+    print('This is a function')
+
+g = f() # g is a function variable
+g()     # calling g() calls in fact f() since f is assign to g
+
+## Passing Functions as Arguments
+
+Since functions are treated as variables, they can be passed as arguments to other functions
+and returned from other functions.
+
+```python
+
+def g(f):
+    print('f returns', f())
+
+def h():
+    return 15
+
+g(h) # prints: f returns 15
+```
+
+## Deleting Entries from Namespaces
+
+Keyword `del` can be used to remove key from dictionary and name from namespace:
+
+```python
+def f():
+    pass
+
+def g():
+    pass
+
+d = {'f':, 'g': g}
+
+# remove key from dictionary
+del d['f]
+
+class C:
+    def f():
+        pass
+
+    def g():
+        pass
+
+# remove name from namespace
+del C.f
+```
+
+## Asterisks and Arguments
+
+List can be converted to list of arguments using asterisk syntax:
+
+```python
+def f(a, b, c):
+    print('a =', a, 'b =', b, 'c =', c)
+
+values = [1, 2, 3]
+
+f(*values) # same as calling f(values[0], values[1], values[2])
+```
+
+Double asterisk can be used to pass eyword arguments in a similar way:
+
+```python
+values = {'a': 1, 'b': 2, 'c': 3}
+
+f(**values) # same as calling f(a=values['a'], b=values['b'], c=values['c'])
+```
+
+## Variate Number of Arguments
+
+Asterisk can also be used to declare a function that gets variate number of arguments:
+
+```python
+def f(*args):
+    print('Number of arguments:', len(args))
+```
+
+The argument `args` in the sample above is a list which may be different on any call:
+
+```python
+f('Hello', 'World') # it will print 2 since the number of arguments is 2
+```
+
+Double asterisk can also be used similarly to get keyword arguments:
+
+```python
+def f(**kwargs):
+    print('Number of keyword arguments:', len(kwargs)
+```
+
+The argument `kwargs` in the sample above is a dictionary and it contains all arguments passed as keywords:
+
+```python
+f(a=2, b=3, u=3) # when f is executed kwargs will be equal {'a': 2, 'b': 3, 'u': 3}
+```
+
+To sum up, a function in Python can get ordered arguments, keyword arguments, list of ordered arguments, dictionary of keyword arguments:
+
+```python
+def f(arg1, argv2, *args_tail, u=2, v=3, **kwtail):
+    pass
+```
+
+## ZIP function
+
+Builtin function `zip()` gets sequence of sequences and returns a sequence where i-th element is a tuple containing the i-th elements
+of every input sequence:
+
+```python
+lst1 = ['A', B', 'C']
+lst2 = [1, 2, 3]
+
+print(list(zip(lst1, lst2))) # Should print [('A', 1), ('B', 2), 'C', 3)]
+
+## Exercises
+
+### Exepcise 2: Unzip
+
+Implement a function unzip which gets the output of `zip()` function and returns the input that was passed to `zip()` to create
+the given output.
+
+### Exercise 1: Enumeration
+
+Implement `enumerate_list(lst)` function which receives a list and returns another list such that
+`enumerate_list(lst) == list(enumerate(lst))` by using the `zip()` function.
+
+# Closures
+
+Functions can be defined inside other functions:
+
+```python
+def f(a):
+    def g(a):
+        return a + 9
+    return g(a) + 10
+
+f(50)
+```
+
+Variables are looked up in the most inner scope first. Nested functions cannot be called directly from the surrounding functions.
+
+If a function returns its inner function then all the variables declared inside the outer function are not erased from memory
+after function execution since they may be used from within the inner function:
+
+```python
+def f():
+    lst = []
+
+    def inc():
+        lst.append(1)
+        return len(lst)
+
+    return inc
+
+i = inc()
+
+i() # this call returns 1
+i() # this call returns 2
+i() # this call returns 3
+...
+```
+
+Complex example of defining function inside function:
+
+```python
+def duplicated(func):
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs) * 2
+
+    return wrapper
+
+def double_length(seq):
+    return len(seq)
+
+double_length = duplicated(double_length)
+print(double_length('12345'))
+```
+
+Lets go over the sample above line by line:
+
+Line 1: First we declare `duplicated()` function which gets another function as a variable.
+Line 2: The we declare an inner function named `wrapper` which gets arbitrary ordered and keyword arguments.
+Line 3: Inside wrapper we call the function that was passed to `duplicated()` (we can do this since inner functions
+see variables from the outer functions) and pass to it the arguments that will be passed when someone will
+call `wrapper()`, we then multiply the result by 2.
+Line 5: We return the inner function `wrapper()` from `duplicated()`
+Lines 7-8: We declare a function called `double_length` that returns the length of any input sequence.
+Line 10: We call `duplicated` pass the function `double_length()` as an argument. When duplicated is executed it creates and then returns
+an inner function `wrapper` that will, in its turn, return two times the length of any input sequence. We put the returned
+function in a function variable `double_length`.
+Line 11: We print the output of the call to double len with input '12345' (the number 10 will be printed)
+
+We could have spared line 10 in the sample above by using the decorator syntax (which does exactly the same thing):
+
+```python
+def duplicated(func):
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs) * 2
+
+    return wrapper
+
+@duplicated
+def double_length(seq):
+    return len(seq)
+
+print(double_length('12345'))
+```
+
+## Exercises
+
+### Exercise 1: Retry
+
+Implement a decorator retry(n) which runs the decorated function at most n times until no
+exceptions are raised. In case of success, the result of the decorated function should be returned.
+In case of failure, the last exception should be reraised.
 
 # Thanks
 
@@ -1064,7 +1302,7 @@ The topics could be changed or corrected according to students' interests, level
 
 Please contact the author if you're interesed in solutions to exercises in the tutorial.
 
-### Gratidude
+### Gratitude
 
 If you enjoyed the course feel free to send gratidute to its author: <a href="https://paypal.me/yrppt">paypal.me/yrppt</a>
 
