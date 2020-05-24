@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NeuFunction</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url('img/futuristic-digital-woman-gray.jpg');
+            background-size: 100%;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #title {
+            margin-top: 5vh;
+            width: 50%;
+        }
+        #logo {
+            margin-top: 10vh;
+            width: 10vw;
+        }
+        #course {
+            top: 50vh;
+            left: 15vw;
+            width: 30vw;
+            max-height: 20vh;
+            position: absolute;
+        }
+        #typehint {
+            top: 70vh;
+            left: 15vw;
+            width: 30vw;
+            position: absolute;
+        }
+        #fable {
+            top: 49vh;
+            right: 15vw;
+            width: 30vw;
+            max-height: 20vh;
+            position: absolute;
+        }
+        #clow {
+            top: 69.5vh;
+            right: 15vw;
+            width: 30vw;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <img id="title" src="title.svg" alt="NeuFunction"></img>
+    <img id="logo" src="logo.png" alt="Percept What You See. See What You Percept."></img>
+
+    <a href="python"><img id="course" src="course.svg" alt="Python Course"></img></a>
+    <a href="https://github.com/yrapop01/typehint"><img id="typehint" src="typehint.svg" alt="Type Hint"></img></a>
+    <a href="https://github.com/yrapop01/fable"><img id="fable" src="fable.svg" alt="Fable: TeX Editor"></img></a>
+    <a href="https://github.com/yrapop01/clow"><img id="clow" src="clow.svg" alt="Clow Programming Language"></img></a>
+</map>
+</body>
