@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2126"
+   version="1.1"
+   viewBox="0 0 108.91228 21.900837"
+   height="21.900837mm"
+   width="108.91228mm">
+  <defs
+     id="defs2120" />
+  <metadata
+     id="metadata2123">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(44.628758,41.944465)"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       id="text3843"
+       x="14.93253"
+       y="-28.845688"><tspan
+         id="tspan3841"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1">TYPE HINT</tspan></text>
+    <path
+       d="m -33.907253,-30.109222 c 0.452079,0.499995 -0.450944,0.856074 -0.831026,0.751385 -1.029997,-0.283699 -1.130299,-1.626333 -0.671746,-2.413436 0.820244,-1.407942 2.76984,-1.479599 3.995848,-0.592106 1.799215,1.302431 1.84016,3.929186 0.512466,5.578258 -1.769606,2.197953 -5.0942,2.205574 -7.160669,0.432827 -2.60044,-2.230822 -2.57351,-6.261925 -0.353187,-8.74308 2.689107,-3.005012 7.431178,-2.942907 10.325491,-0.273548 3.410848,3.145747 3.313223,8.601385 0.193908,11.907902 -3.601372,3.817505 -9.772229,3.684151 -13.490313,0.114269 -4.224723,-4.056328 -4.055508,-10.94352 -0.03463,-15.072725 4.510818,-4.632343 12.115137,-4.427175 16.655135,0.04501 5.040259,4.964974 4.799075,13.286999 -0.12465,18.237546"
+       id="path3861"
+       style="fill:none;fill-rule:evenodd;stroke:#ff3737;stroke-width:0.264583;stroke-opacity:1" />
+    <text
+       y="-23.034836"
+       x="-7.87815"
+       id="text3883"
+       style="font-style:normal;font-weight:normal;font-size:3.83082px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.83082px;font-family:monospace;-inkscape-font-specification:monospace;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1"
+         id="tspan3881">Python type interference engine</tspan></text>
+  </g>
+</svg>

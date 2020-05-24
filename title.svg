@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg869"
+   version="1.1"
+   viewBox="0 0 198.44403 8.02845"
+   height="8.02845mm"
+   width="198.44403mm">
+  <defs
+     id="defs863" />
+  <metadata
+     id="metadata866">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(310.13273,106.0678)"
+     id="layer1">
+    <text
+       y="-98.308067"
+       x="-311.07324"
+       id="text3875"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;letter-spacing:13.2292px;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+         id="tspan3873">NEUFUNCTION</tspan></text>
+  </g>
+</svg>

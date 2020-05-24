@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   sodipodi:docname="contents.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="465.11496"
+     inkscape:cy="484.58272"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="966"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#0c6c7c;fill-opacity:1;stroke:none;stroke-width:1.796;stroke-miterlimit:4;stroke-dasharray:1.796, 3.59201000000000015;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3715"
+       width="316.02164"
+       height="212.35475"
+       x="-8.2993574"
+       y="-1.3526874" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.1111px;line-height:0;font-family:sans-serif;letter-spacing:0.529167px;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       id="text855"><textPath
+         xlink:href="#path3867"
+         id="textPath3870"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1">       Percept what you see. See what you percept.</textPath></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.326977px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 98.710217,-52.352077 c 31.226833,15.345939 82.651753,13.84383 108.398273,-3.883196"
+       id="path3737"
+       sodipodi:nodetypes="cc" />
+    <text
+       y="139.64458"
+       x="85.669884"
+       id="text3843"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+         id="tspan3841">TYPE HINT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       id="text3847"
+       x="277.08234"
+       y="-33.644352"><tspan
+         id="tspan3845"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1">FABLE TEX EDITOR</tspan></text>
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#ff3737;stroke-width:0.264583;stroke-opacity:1"
+       id="path3861"
+       sodipodi:cx="36.830097"
+       sodipodi:cy="138.38104"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="13.444197"
+       sodipodi:argument="-18.013872"
+       sodipodi:t0="0"
+       d="m 36.830097,138.38104 c 0.45208,0.5 -0.450944,0.85608 -0.831025,0.75139 -1.029997,-0.2837 -1.130299,-1.62634 -0.671746,-2.41344 0.820243,-1.40794 2.76984,-1.4796 3.995847,-0.5921 1.799216,1.30243 1.84016,3.92918 0.512467,5.57825 -1.769607,2.19796 -5.0942,2.20558 -7.160669,0.43283 -2.600441,-2.23082 -2.57351,-6.26192 -0.353188,-8.74308 2.689108,-3.00501 7.431178,-2.94291 10.325491,-0.27355 3.410848,3.14575 3.313223,8.60139 0.193909,11.90791 -3.601373,3.8175 -9.77223,3.68415 -13.490314,0.11426 -4.224723,-4.05632 -4.055507,-10.94352 -0.03463,-15.07272 4.510819,-4.63234 12.115137,-4.42718 16.655136,0.045 5.040259,4.96497 4.799075,13.287 -0.124651,18.23755" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#ff3737;stroke-width:0.26469;stroke-miterlimit:4;stroke-dasharray:0.52938, 0.26468999999999998, 0.13234499999999999, 0.26468999999999998;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3867"
+       sodipodi:cx="3.3065863"
+       sodipodi:cy="-39.186268"
+       sodipodi:expansion="1"
+       sodipodi:revolution="2.1612134"
+       sodipodi:radius="18.367735"
+       sodipodi:argument="-18.176497"
+       sodipodi:t0="0.13322917"
+       d="m 1.372443,-37.687109 c -2.00147288,-0.86153 -1.97716704,-3.569402 -0.86665442,-5.112615 1.90329082,-2.644891 5.78948352,-2.477894 8.09356732,-0.488981 3.3189601,2.864967 2.9950481,8.036004 0.1113064,11.07452 -3.8033814,4.007514 -10.2925882,3.519722 -14.055472,-0.266368 -4.7032723,-4.732277 -4.0484047,-12.554164 0.6440416,-17.036424 5.65641258,-5.403047 14.8186131,-4.579449 20.0173771,1.021716 6.105271,6.577838 5.111991,17.084873 -1.39939,22.998329 -3.443407,3.127206 -8.0835235,4.750136 -12.7218593,4.556661"
+       transform="matrix(-0.04216711,-2.1006278,2.6901497,-0.04911187,245.03638,79.256113)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;letter-spacing:13.2292px;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       id="text3875"
+       x="44.228645"
+       y="20.909719"><tspan
+         id="tspan3873"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1">NEUFUNCTION</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.83082px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1"
+       id="text3883"
+       x="62.859203"
+       y="145.45543"><tspan
+         id="tspan3881"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.83082px;font-family:monospace;-inkscape-font-specification:monospace;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1">Python type interference engine</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       id="text3887"
+       x="53.235229"
+       y="167.73282"><tspan
+         id="tspan3885"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1">PYTHON COURSE</tspan></text>
+    <text
+       y="173.7475"
+       x="58.828712"
+       id="text3891"
+       style="font-style:normal;font-weight:normal;font-size:3.83082px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.83082px;font-family:monospace;-inkscape-font-specification:monospace;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1"
+         id="tspan3889">Based &quot;do and reflex&quot; methodology</tspan></text>
+    <text
+       y="139.79872"
+       x="161.69203"
+       id="text3895"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+         id="tspan3893">CLOW LANG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.83082px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1"
+       id="text3899"
+       x="221.69174"
+       y="145.98802"><tspan
+         sodipodi:role="line"
+         id="tspan3902"
+         x="221.69174"
+         y="145.98802"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.83082px;font-family:monospace;-inkscape-font-specification:monospace;text-align:end;text-anchor:end;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1">Low-level programming language</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3904"
+         x="221.69174"
+         y="150.77655"
+         style="text-align:end;text-anchor:end">with high level generics</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1"
+       id="text3908"
+       x="191.91109"
+       y="167.69742"><tspan
+         id="tspan3906"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Rachana;-inkscape-font-specification:Rachana;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.264583;stroke-opacity:1">FABLE</tspan></text>
+    <text
+       y="174.08034"
+       x="221.69"
+       id="text3914"
+       style="font-style:normal;font-weight:normal;font-size:3.83082px;line-height:1.25;font-family:sans-serif;fill:#43fe27;fill-opacity:1;stroke:#ffe014;stroke-width:0.130596;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="text-align:end;text-anchor:end"
+         y="174.08034"
+         x="221.69"
+         id="tspan3912"
+         sodipodi:role="line">Notebook based LaTeX Editor</tspan></text>
+    <path
+       d="m 36.528965,168.974 c 0.452079,0.49999 -0.450944,0.85607 -0.831025,0.75138 -1.029998,-0.28369 -1.130299,-1.62633 -0.671746,-2.41343 0.820243,-1.40794 2.769839,-1.4796 3.995847,-0.59211 1.799215,1.30243 1.84016,3.92919 0.512467,5.57826 -1.769607,2.19795 -5.094201,2.20557 -7.16067,0.43283 -2.60044,-2.23082 -2.573509,-6.26193 -0.353187,-8.74308 2.689108,-3.00501 7.431178,-2.94291 10.325491,-0.27355 3.410848,3.14575 3.313223,8.60138 0.193908,11.9079 -3.601372,3.81751 -9.772229,3.68415 -13.490313,0.11427 -4.224723,-4.05633 -4.055507,-10.94352 -0.03463,-15.07272 4.510818,-4.63235 12.115137,-4.42718 16.655135,0.045 5.040259,4.96497 4.799076,13.287 -0.12465,18.23754"
+       sodipodi:t0="0"
+       sodipodi:argument="-18.013872"
+       sodipodi:radius="13.444197"
+       sodipodi:revolution="3"
+       sodipodi:expansion="1"
+       sodipodi:cy="168.974"
+       sodipodi:cx="36.528965"
+       id="path857"
+       style="fill:none;fill-rule:evenodd;stroke:#ff3737;stroke-width:0.264583;stroke-opacity:1"
+       sodipodi:type="spiral" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#ff3737;stroke-width:0.264583;stroke-opacity:1"
+       id="path859"
+       sodipodi:cx="239.00989"
+       sodipodi:cy="136.9184"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="13.444197"
+       sodipodi:argument="-18.013872"
+       sodipodi:t0="0"
+       d="m 239.00989,136.9184 c 0.45208,0.49999 -0.45095,0.85607 -0.83103,0.75138 -1.02999,-0.2837 -1.1303,-1.62633 -0.67174,-2.41343 0.82024,-1.40795 2.76984,-1.4796 3.99584,-0.59211 1.79922,1.30243 1.84016,3.92919 0.51247,5.57826 -1.76961,2.19795 -5.0942,2.20557 -7.16067,0.43282 -2.60044,-2.23082 -2.57351,-6.26192 -0.35319,-8.74308 2.68911,-3.00501 7.43118,-2.9429 10.32549,-0.27354 3.41085,3.14574 3.31323,8.60138 0.19391,11.9079 -3.60137,3.8175 -9.77223,3.68415 -13.49031,0.11427 -4.22472,-4.05633 -4.05551,-10.94352 -0.0346,-15.07273 4.51082,-4.63234 12.11514,-4.42717 16.65514,0.045 5.04026,4.96498 4.79907,13.287 -0.12465,18.23755" />
+    <path
+       d="m 238.46097,167.79391 c 0.45208,0.5 -0.45095,0.85608 -0.83103,0.75139 -1.02999,-0.2837 -1.1303,-1.62633 -0.67174,-2.41344 0.82024,-1.40794 2.76984,-1.47959 3.99584,-0.5921 1.79922,1.30243 1.84016,3.92918 0.51247,5.57826 -1.76961,2.19795 -5.0942,2.20557 -7.16067,0.43282 -2.60044,-2.23082 -2.57351,-6.26192 -0.35319,-8.74308 2.68911,-3.00501 7.43118,-2.9429 10.3255,-0.27354 3.41084,3.14574 3.31322,8.60138 0.1939,11.9079 -3.60137,3.8175 -9.77223,3.68415 -13.49031,0.11427 -4.22472,-4.05633 -4.05551,-10.94352 -0.0346,-15.07273 4.51082,-4.63234 12.11514,-4.42717 16.65514,0.045 5.04026,4.96498 4.79907,13.287 -0.12465,18.23755"
+       sodipodi:t0="0"
+       sodipodi:argument="-18.013872"
+       sodipodi:radius="13.444197"
+       sodipodi:revolution="3"
+       sodipodi:expansion="1"
+       sodipodi:cy="167.79391"
+       sodipodi:cx="238.46097"
+       id="path861"
+       style="fill:none;fill-rule:evenodd;stroke:#ff3737;stroke-width:0.264583;stroke-opacity:1"
+       sodipodi:type="spiral" />
+  </g>
+</svg>
