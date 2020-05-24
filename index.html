@@ -7,9 +7,11 @@
         html, body {
             margin: 0;
             padding: 0;
+        }
+        body {
+            background: #bdc3c7;
             text-align: center;
             font-family: monospace;
-            background: linear-gradient(to top, #bdc3c7, #2c3e50);
         }
 
         svg {
@@ -17,6 +19,23 @@
              width: 100vmin;
              height: 100vmin;
         }
+
+        @media (orientation: landscape) {
+            body {
+                background: linear-gradient(to top, #bdc3c7, #2c3e50);
+            }
+        }
+
+        @media (orientation: portrait) {
+            svg {
+                background: linear-gradient(to top, #bdc3c7, #2c3e50);
+            }
+
+            body {
+                background: #bdc3c7;
+            }
+        }
+ 
     </style>
 </head>
 
