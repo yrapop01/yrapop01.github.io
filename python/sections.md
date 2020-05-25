@@ -1,34 +1,3 @@
----
-header: Python Language Tutorial
-title: Python Language Tutorial
----
-
-# Contents
-
-- [Motivation](#motivation)
-- [Basics](#basics)
-- [Classes](#classes)
-- [Exceptions](#exceptions)
-- [Comprehensions](#comprehensions)
-- [Features](#higher-level-features)
-- [Closures](#closures)
-- [Topics](#topics)
-- [Thanks](#thanks)
-
-# Motivation
-
-- Python is a high-level, interpreted programming language.
-  The interpreter can be downloaded from python.org
-
-- It supports procedural, functional, object oriented and modular programming paradigms.
-- It uses dynamic type system and automatic memory management.
-- Python is expressive.
-  For instance, for any integer variable n, the expression ('big ' * n) creates a string which repeates n times the word "big".
-  Similar logic takes multiple lines of code in low level languages.
-
-- Python has rich standard library, vibrant community and lots of easily installed modules that enrich the language.
-  Python online help with the description of builtin library can be found at docs.python.org
-
 # Basics
 
 ## Comments

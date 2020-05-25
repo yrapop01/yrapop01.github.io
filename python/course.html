@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Course</title>
+    <meta charset="UTF-8">
+    <base href="..">
+
+    <link rel="stylesheet" href="python/highlight/styles/agate.css">
+    <script src="python/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        @font-face {
+          font-family: 'Nova Mono';
+          src: url('font/NovaMono-Regular.ttf') format('truetype');
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to top, #bdc3c7, #2c3e50);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Nova Mono';
+            text-align: center;
+        }
+
+        svg.header {
+            height: 25vh;
+            margin-top: 5vh;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div {
+            width: 21cm;
+            max-width: 100%;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            background: #bdc3c7;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+            color: #2c3e50;
+            text-align: justify;
+            hyphens: auto;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-family: sans-serif;
+            line-height: 1.3em;
+            font-size: 14pt;
+        }
+
+        p, h2, h3 {
+            padding-left: 28pt;
+            padding-right: 28pt;
+        }
+
+        p.question {
+            color: red;
+            text-align: left;
+            font-family: 'Nova Mono';
+        }
+
+        pre {
+            margin-left: 3em;
+            margin-right: 3em;
+        }
+        code {
+            font-family: 'Nova Mono';
+            background-color: #2c3e50 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<svg version="1.1" class="header" baseProfile="full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277 18">
+    <style>
+        .title {
+            font-size: 15px;
+            fill: red;
+            stroke: yellow;
+            stroke-width: 0.3px;
+        }
+    </style>
+
+    <text x="0" y="3" class="title">Pythons, Pandas &amp; Other Creatures</text>
+
+    <circle cx="55" cy="13" r="5" fill="yellow" opacity="0.8" />
+    <circle cx="123" cy="13" r="5" fill="#bdc3c7" opacity="0.8" />
+    <circle cx="206.5" cy="13" r="5" fill="red" opacity="0.8" />
+
+</svg>
+
+<div>
+<h1>Preface</h1>
+<p>"The best way to learn a language is to use it". Is this motto correct in the realm of programming languages as well?
+Unlike spoken languages, programming languages always follow some formal set of rules, so isn't it better to simply learn those rules?</p>
+
+<p>Simply learning the rules is not enough because the rules by themselves do not give an intuition that allows the programmer
+to use them in the most effective and efficient way.</p>
+
+<p>Moreover, since the rules of programming languages are often quite simple, learning them explicitly might be a 
+waste of time, it is better to just start looking at real programs and figuring out the rules along the way.</p>
+
+<p>There is one hazard with this one-hundred-percent-hands-on approach: without knowing the exact rules and theory we may conclude
+that a certain way of doing things is the best when in fact it may be not optimal or even wrong. In other words we may acquire
+bad habbits.</p>
+
+<p>Therefore, it is better to learn new progrmming languages using the following methodology: first practice and achieve some
+working results, but then immidiately reflect on those results and analyse them to induce the correct behaviour. It is
+better to perform the latter stage with a teacher, however, expirienced programmers may do it by themselves.</p>
+</div>
+
+<div>
+<h1>Table of Contents</h1>
+
+<ul>
+    <li><a href="python/course.html#basics">Basics</a></li>
+    <li><a href="python/course.html#classes">Classes</a></li>
+    <li><a href="python/course.html#exceptions">Exceptions</a></li>
+    <li><a href="python/course.html#comprehensions">Comprehensions</a></li>
+    <li><a href="python/course.html#features">Higher Level Features</a></li>
+    <li><a href="python/course.html#closures">Closures</a></li>
+    <li><a href="python/course.html#summary">Summary</a></li>
+</ul>
+
+</div>
+
+<div>
+<h1 id="basics">Basics</h1>
+
+<h2>Comments</h2>
+
+<p>Download latest Python interpreter from python.org, run it and execute the following code (type it in the interpreter):</p>
+<pre><code class="python"># This is line comment
+
+"""This 
+is a
+multi
+line
+string, 
+which can be used as comment"""
+</code></pre>
+
+<h2>Dynamic Typing</h2>
+
+<p>Python is a <em>dynamically typed</em> programming language. Types are decided at runtime. A special built-in function <em>type</em> returns the type of an object.</p>
+
+<pre><code class="python"># Run the code below in an interpreter:
+
+s = "Hello, World! שלום"
+bt = b'Hello'
+n = 55
+f = 5.5
+b = True
+null = None
+
+print(type("Hello"))  # print() is used for putting things on screen
+print(type(n))
+print(type(f))
+print(type(b))
+print(type(null))
+</code></pre>
+<h2>Unary and Binary Operations</h2>
+<p>Run the code below in an interpreter and answer the questions below:</p>
+
+<pre><code class="python"># Getting input string from the user
+name = input('Your name is ')
+
+# Strings can be added and multiplied
+print(name + ", very nice to meet you" + ('!' * 10))
+</code></pre>
+
+<p class="question">What happens when two strings are added?</p>
+<p class="question">What happens when string is multiplied by an integer?</p>
+
+<h3>Arithmetic & Logical Operations</h3>
+<p>Checking whether <!-- 322.0625 -\frac{(n^3 + 1456)}{16} > m --><math><mrow><mn>322</mn><mi>.</mi><mn>0625</mn><mo>-</mo><mfrac linethickness="1"><mrow><mrow><mo>(</mo><msup><mrow><mi>n</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>+</mo><mn>1456</mn><mo>)</mo></mrow></mrow><mrow><mrow><mn>16</mn></mrow></mrow></mfrac><mi>></mi><mi>m</mi></mrow></math> for n=12 and m=150:</p>
+
+<pre><code class="python">n = 12
+m = 150
+322.0625 - (n ** 3) / 16 > m
+</code></pre>
+<p>Verifying that 5 < 6 < 8 and that -1 < 0:</p>
+
+<pre><code class="python">(5 < 6 < 8) and (-1 < 0)
+</code></pre>
+<p>Verifying that binary number 101 (5) xored with 111 (7) equals 010 (4):</p>
+
+<pre><code class="python">5 ^ 7 == 4
+</code></pre>
+<p>Doing the same by manually converting binary strings to integers:</p>
+
+<pre><code class="python">five = int('101', base=2)
+seven = int('111', base=2)
+
+n = five ^ seven
+
+print('decimal:', n)
+
+binary = format(n, 'b')
+
+print('binary:', binary)
+</code></pre>
+<h2>Lists and Tuples</h2>
+<p>List is an array in python. Tuple is a list that cannot be changed.</p>
+
+<pre><code class="python"># Declare a list:
+lst = [1, 2, 3, 4, 5]
+
+# Change the values of the list:
+lst[0] = 'Hello'
+lst[-1] = 20
+print(lst)
+</code></pre>
+<p class="question">Why do you see an error when you try to run the code below?</p>
+<pre><code class="python"># Declare the following tuple (tuple is a list that cannot be changed)
+tpl = (1, 2, 3, 4, 5)
+
+# Set the value of tpl[0] to 0.
+tpl[0] = 0
+</code></pre>
+<p>What is the complexity of the following operation (assuming the length of lst lst is n):</p>
+
+<pre><code class="python"># in operator checks whether an element is contained in a container:
+
+5 in lst # => True
+</code></pre>
+<p>For loops can be used to iterate lists and tuples:</p>
+
+<pre><code class="python"># print all values in a list one by one.
+
+for value in lst:
+    print(value)
+</code></pre>
+<h2>Indexing</h2>
+<p>The length of any container (string, list, tuple, etc.) is returned by builtin len() function:</p>
+
+<pre><code class="python">x = [1, 2, 3, 4, 5]
+print(len(x))
+</code></pre>
+<p>Strings, lists and tuples can all be indexed and iterated. Indexing a container returns new container
+of the same type containing elements from the original one. The syntax of indexing a container x is</p>
+
+<pre><code class="python">x[i:j:k]
+</code></pre>
+<p>where i, j, k specify the indexes sequence: i, i+k, i+2*k, ..., j. The output container contains
+all elements matching the indexes in that sequence in the input container, except the last one.</p>
+
+<p>There are shortcuts that allow avoiding explicit specification of i, j, or k. All the following
+boolean expressions True for any non empty container x:</p>
+
+<pre><code class="python">x[i] == x[i:i+1:1]
+x[i:j] == x[i:j:1]
+x[:j] == x[0:j]
+x[:] == x[0:len(x)]
+x[-1] == x[-1 + len(x)]
+x[::2] == x[0:len(x):2]
+x[-1:0:-1] == x[len(x):0:-1]
+
+x = '0123456789'
+x[::-1] == x[-1:0:-1] + x[0]
+</code></pre>
+<p class="question"> Make the interpreter print the values of s[0], s[-1], s[0:3], s[-6:], s[::5], s[::-3] for string s defined below:</p>
+<pre><code class="python">s = "Rose is a rose is a rose"
+</code></pre>
+<p>While lists, tuples and strings can be indexed only be integer, dictionaries can be index by many different types.</p>
+
+<pre><code class="python">capitals = {'Moscow': 'Russia', 'London':, 'United Kingdom', 'Monaco': 'Monaco'}
+
+print('London is the capital of', capitals['London'])
+</code></pre>
+<h2>Functions</h2>
+<p>Statement sequences can be put in a functions. Functions are defined and called as follows:</p>
+
+<pre><code class="python">def function_name():
+    print('Code inside function') # notice the identation
+
+
+function_name() # call
+function_name() # another call
+</code></pre>
+<p>Functions can get arguments and return values. The following function gets a string and returns boolean value which tells if a string is a palindrome:</p>
+
+<pre><code class="python">def is_palindrome(s):
+    return s == s[::-1]
+</code></pre>
+<p>To test the function above run:</p>
+
+<pre><code class="python">palindrome("abba")
+</code></pre>
+<h2>Indentation, Control Flows</h2>
+<p>As you've noticed in function declaration, indentation is Python’s way of making blocks of statements.
+That is, all statements that may be followed by a block of code are terminated by a colon and the following
+lines are indented to the right. The block is terminated by a line which moves again to the left.</p>
+
+<pre><code class="python"># If:
+
+if 4 < 6 < 8:
+    if 9 < 5:
+        print('Jenny')
+    print('Jerry')
+else:
+    print('Lenny')
+    
+# While:
+
+i = 0
+lst = []
+while i < 10:
+    lst = lst + [i]
+    #lst.append(i)
+    i += 1
+
+print(lst)
+</code></pre>
+<p class="question">What would be the output of the code above (run it in the interpreter to verify your answer)?</p>
+<h2>Casting</h2>
+<p>Cast from one type to another can be done using built-in functions int, float, list, tuple, bool, etc.</p>
+
+<p class="question">
+<p>Print in the interpreter the types and the values of:
+- tuple("Anna")
+- int(5.5)
+- bool([])
+- bool([0])</p>
+
+</p>
+<h2>Sets and Dictionaries</h2>
+<p>Sets and dictionaries are implemented in python with hashtables. They are defained using curly brackets.</p>
+
+<pre><code class="python"># Define a set of strings:
+towers = {'Azrieli', 'Electra', 'Time', 'Atrium', 'Sail'}
+print(towers)
+</code></pre>
+<p class="question">What was the complexity of the following expression assuming the set towers contains n elements?</p>
+<pre><code class="python">'Electra' in towers
+</code></pre>
+<p>Dictionaries allow assotiating every key element in a set with a value.</p>
+
+<pre><code class="python"># Define a dictionary:
+towers = {'Tel Aviv': ['Azrieli', 'Electra'],
+          'Ramat Gan': ['Time', 'Atrium'],
+          'Haifa': ['Sail']}
+print(towers['Tel Aviv'])
+</code></pre>
+<p class="question">What is the type of towers["Ramat Gan"]? How do you check it in python?</p>
+<p>Alternative to create a dictionary:</p>
+
+<pre><code class="python">x = dict(one=1, two=2, three=3)
+y = {'one': 1, 'two': 2, 'three': 3}
+
+print(x == y)
+</code></pre>
+<h2>Keyword Arguments</h2>
+<p>When arguments are passed to a function, they can be past as list (one after another) or as dictionary:</p>
+
+<pre><code class="python">def f(a, b, c):
+    print(a, b, c)
+
+f(1, 2, 3)
+f(a=1, b=2, c=3)
+</code></pre>
+<h2>Default Arguments</h2>
+<p>When declaring a function, default values can be attached to some arguments -- these arguments
+can be ommited when the function is called:</p>
+
+<pre><code class="python">def f(a, b, c=2):
+    print(c)
+
+f(1, 1)     # c=2
+f(1, 1, 4)  # c=4
+</code></pre>
+<h2>Importing Standard Library Functions</h2>
+<p>Python language has very rich standard library with lots of useful functions. For convinience these functions
+are split to different modules. For instance, functions dealing with randomness are put in a module named random.</p>
+
+<p>To use these function the required module must be first imported by its name with import command. For instance,
+random module is imported as follows:</p>
+
+<pre><code class="python">import random
+</code></pre>
+<p>Then module functions can be called:</p>
+
+<pre><code class="python">n = random.randint(0, 10)
+</code></pre>
+<p>The code above puts random integer between 0 and 10 in variable n.</p>
+
+<h2>Standard Input</h2>
+<p>The module sys contains a variable stdin. It is a special variable that can be used in a for loop:</p>
+
+<pre><code class="python">import sys
+
+for line in sys.stdin:
+    print(len(line))
+</code></pre>
+<p>the code above prints the length of every line in the standard input.</p>
+
+<h2>Calling Instance Functions</h2>
+<p>Any variable in python is an object: it is assosiated with a predefined list of functions which get the related
+object as their first argument.</p>
+
+<p>To call the assosiated functions of an object, similar syntax to calling functions in a module is used.
+For instance, there is a function upper() that is associated with string objects and it makes all letters in a string to be uppercase.</p>
+
+<p>Here is how it can be used:</p>
+
+<pre><code class="python">s = "blue rose"
+print(s.upper())  # "BLUE ROSE" should be printed
+</code></pre>
+<h2>Strings</h2>
+<p>Strings can be defined with either double-quote or a single quotes:</p>
+
+<pre><code class="python">"a string" == 'a string'
+</code></pre>
+<p>By default, splitting a line in the middle of a string is forbidden. To declare multi-line
+string the quote sign is written three times:</p>
+
+<pre><code class="python">"""This is a multi
+line string"""
+</code></pre>
+
+</div>
+   
+</body>
+
+</html>
