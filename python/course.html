@@ -76,9 +76,10 @@
         }
 
         pre {
-            margin-left: 3em;
-            margin-right: 3em;
+            margin-left: 30pt;
+            margin-right: 30pt;
         }
+
         code {
             font-family: 'Nova Mono';
             background-color: #2c3e50 !important;
@@ -86,8 +87,6 @@
 
         code.inline {
             all: initial !important;
-            /*background: #bdc3c7 !important;
-            color: #2c3e50 !important;*/
         }
     </style>
 </head>
@@ -142,7 +141,7 @@ better to perform the latter stage with a teacher, however, expirienced programm
     <li><a href="python/course.html#comprehensions">Comprehensions</a></li>
     <li><a href="python/course.html#functions">Functions</a></li>
     <li><a href="python/course.html#closures">Closures</a></li>
-    <li><a href="python/course.html#summary">Summary</a></li>
+    <li><a href="python/course.html#pandas">Pandas</a></li>
 </ul>
 
 </div>
@@ -1228,7 +1227,30 @@ print(double_length('12345'))
 exceptions are raised. In case of success, the result of the decorated function should be returned.
 In case of failure, the last exception should be reraised.</p>
 </div>
-   
+
+<div id="pandas">
+<h1>Pandas</h1>
+
+<p>Python's scientific stack fame goes before its name. Histrorically, the basis of this stack was the numpy module,
+the crux of which is fast, convinient and open source n-dimentional numbers arrays operations library.</p>
+
+<p>Numerous scientific and data analytics packages were built on top of this solid fundament.
+One of them is Pandas: data manipulation package.</p>
+
+<p>Another popular package is jupyer: jupyer allows running python code snippets one by one in a web app. The
+code-snippets (also called cells) appear on a single web page called a notebook and they can be executed one by one. The
+output of every code-snippet immidiately follows its definition in the notebook.  This way of writing new code is very convinient for data analysis.</p>
+
+<p>Notebooks become a de-facto standard for data analysis environments. Therefore, the most natural way to learn
+Python's scientific stack libraries is to use them in a Jupyter.</p>
+
+<p>We prepared a notebook with examples of Panda's code.</p>
+
+<p class="question">Please open <a href="python/Pandas.ipynb">Pandas Notebook</a> in Jupyter.
+Run the cells one by one and observe what they do.</p>
+
+</div>
+
 </body>
 
 </html>
