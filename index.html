@@ -13,20 +13,23 @@
             margin: 0;
             padding: 0;
         }
+
         body {
             font-family: 'Nova Mono';
-            text-align: center;
-            background: #bdc3c7;
-            background: linear-gradient(to top, #bdc3c7, #2c3e50);
+            display: flex;
+            flex-direction: column;
         }
 
         svg {
              margin: auto;
-             width: 100vw;
-             height: 100vh;
+             width: 100vmin;
+             height: 100vmin;
         }
 
-/*
+        div {
+            display: none;
+        }
+
         @media (orientation: landscape) {
             body {
                 background: linear-gradient(to top, #bdc3c7, #2c3e50);
@@ -37,16 +40,24 @@
             svg {
                 background: linear-gradient(to top, #bdc3c7, #2c3e50);
             }
-
-            body {
+            #before {
+                background: #2c3e50;
+                height: calc(50vh - 50vw);
+                display: block;
+                
+            }
+            #after {
                 background: #bdc3c7;
+                height: calc(50vh - 50vw);
+                display: block;
             }
         }
- */
     </style>
 </head>
 
 <body>
+
+<div id="before"></div>
 
 <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <style>
@@ -108,6 +119,8 @@
 
 </svg>
    
+<div id="after"></div>
+
 </body>
 
 </html>
