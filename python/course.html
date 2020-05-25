@@ -140,7 +140,7 @@ better to perform the latter stage with a teacher, however, expirienced programm
     <li><a href="python/course.html#classes">Classes</a></li>
     <li><a href="python/course.html#exceptions">Exceptions</a></li>
     <li><a href="python/course.html#comprehensions">Comprehensions</a></li>
-    <li><a href="python/course.html#features">Useful Features</a></li>
+    <li><a href="python/course.html#functions">Functions</a></li>
     <li><a href="python/course.html#closures">Closures</a></li>
     <li><a href="python/course.html#summary">Summary</a></li>
 </ul>
@@ -223,6 +223,7 @@ binary = format(n, 'b')
 
 print('binary:', binary)
 </code></pre>
+
 <h2>Lists and Tuples</h2>
 <p>List is an array in python. Tuple is a list that cannot be changed.</p>
 
@@ -291,6 +292,20 @@ x[::-1] == x[-1:0:-1] + x[0]
 
 print('London is the capital of', capitals['London'])
 </code></pre>
+
+<h2>List, Tuple Expansion</h2>
+<p>In python, multiple assignments can be done in one line:</p>
+
+<pre><code class="python">i, j = 5, 9
+print(i, j)
+</code></pre>
+<p>Finite sequences can be assignment to sequences of variables:</p>
+
+<pre><code class="python">coordinates = ['hello', 8.9, 10]
+[x, y, z] = coordinates
+print(x, y, z)
+</code></pre>
+
 <h2>Functions</h2>
 <p>Statement sequences can be put in a functions. Functions are defined and called as follows:</p>
 
@@ -679,6 +694,31 @@ f = F()
 z = f(1, 2) # The value of z is 3
 </code></pre>
 
+<h2>Deleting Entries from Namespaces</h2>
+<p>Keyword <code class="inline">del</code> can be used to remove key from dictionary and name from namespace:</p>
+
+<pre><code class="python">def f():
+    pass
+
+def g():
+    pass
+
+d = {'f':, 'g': g}
+
+# remove key from dictionary
+del d['f]
+
+class C:
+    def f():
+        pass
+
+    def g():
+        pass
+
+# remove name from namespace
+del C.f
+</code></pre>
+
 <h2>Exercises:</h2>
 <h3>Exercise 1: Counter</h3>
 <p>Implement class which allows making callable instances that have also a variable <code class="inline">count</code> which tells the number of times they were called:</p>
@@ -1010,21 +1050,8 @@ that lists all non-negative integer numbers.</p>
 
 </div>
 
-<div id="features">
-<h1>Higher Level Features</h1>
-
-<h2>List, Tuple Expansion</h2>
-<p>In python, multiple assignments can be done in one line:</p>
-
-<pre><code class="python">i, j = 5, 9
-print(i, j)
-</code></pre>
-<p>Finite sequences can be assignment to sequences of variables:</p>
-
-<pre><code class="python">coordinates = ['hello', 8.9, 10]
-[x, y, z] = coordinates
-print(x, y, z)
-</code></pre>
+<div id="functions">
+<h1>Functions</h1>
 
 <h2>Function Variables</h2>
 <p>In Python, functions are first class citizens: they can be treated as a variable.</p>
@@ -1049,31 +1076,6 @@ def h():
     return 15
 
 g(h) # prints: f returns 15
-</code></pre>
-
-<h2>Deleting Entries from Namespaces</h2>
-<p>Keyword <code class="inline">del</code> can be used to remove key from dictionary and name from namespace:</p>
-
-<pre><code class="python">def f():
-    pass
-
-def g():
-    pass
-
-d = {'f':, 'g': g}
-
-# remove key from dictionary
-del d['f]
-
-class C:
-    def f():
-        pass
-
-    def g():
-        pass
-
-# remove name from namespace
-del C.f
 </code></pre>
 
 <h2>Asterisks and Arguments</h2>
