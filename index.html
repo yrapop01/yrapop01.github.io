@@ -1,8 +1,28 @@
-<html>
-  <head>
-    <title>Yuri Rapoport</title>
-  </head>
-  <body>
-    Hello, my first name is Yuri. My last name is Rapoport.
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Image</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .full-page-image {
+            background-image: url('image2000.png');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-page-image"></div>
+</body>
 </html>
